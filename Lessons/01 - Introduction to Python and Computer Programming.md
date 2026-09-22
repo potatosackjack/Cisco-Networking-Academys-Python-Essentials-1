@@ -144,15 +144,15 @@ In confusion I asked ChatGPT if the built-in interpreter is the red highlights f
 
 *Think of it as two related things:*
 
-*1. Code editor*
+1. Code editor
 
 *Looks at your code and can warn you about problems while you're typing.*
 
-*2. Python interpreter*
+2. Python interpreter
 
 *Actually processes and executes your Python program when you run it.*
 
-*For example:*
+For example:
 pritn("Hello")
 
 *Your editor might immediately put a red underline under pritn.*
@@ -161,7 +161,7 @@ pritn("Hello")
 
 NameError: name 'pritn' is not defined
 
-*So:*
+So:
 
 🔴 *Red underline: “Hey, I think there's a problem here.”*  
 ▶️ *Interpreter: “I actually tried to execute this and here's the error I encountered.”*
