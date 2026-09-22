@@ -110,12 +110,35 @@ A program written in a high-level programming language is called a **source code
 Source code = the code itself.
 Source file = the file containing the code.
 
-**1.1.5 Compilation vs. Interpretation**
+⚠️**1.1.5 Compilation vs. Interpretation**
 
 Computers have two different ways of transforming a program from a high-level programming language into machine language:
 
- 
+**Compilation**
+A compiler takes your source code and translates it into another form—often machine code—before the program runs.
 
+Think:
+Your source code
+      ↓
+   Compiler
+      ↓
+Machine code
+      ↓
+   Computer
+
+
+
+**Interpretation**
+An interpreter reads your source code and performs the instructions through an interpreter while the program is running.
+
+Think:
+Your source code
+      ↓
+  Interpreter
+      ↓
+  Executes it
+      ↓
+   Computer
 
 ## 1.2. Section 2 Introduction to Python
 
