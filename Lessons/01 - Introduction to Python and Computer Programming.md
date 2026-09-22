@@ -53,7 +53,7 @@ Computer: executes that instruction → Hello
 Computers have their own language called machine language
 
 A complete set of known commands is called an **instruction list**, sometimes abbreviated to **IL**
-↳ Different types of computers may vary depending on the size of their ILs, and the instructions could be completely different in different models.
+↳ Different types of computers may vary depending on the size of their ILs, and the instructions could be completely different in different models. (Ties into 1.1.1)
 
 
 **1.1.3 What makes a language?**
@@ -67,7 +67,7 @@ Letters: A-Z, a-z.
 Numbers: 0-9. 
 Symbols: +, -, =, (,), etc.  
 
-2. A Lexis
+2.A Lexis
 
 Lexis is the collection of words or basic elements that make up a language.
 
@@ -78,7 +78,7 @@ In Python, examples include:
 - while
 - True
 
-3. Syntax
+3.Syntax
 
 Syntax is the set of rules for how those words and symbols must be arranged.
 
@@ -88,6 +88,30 @@ print("Hello")
 4.Semantics
 
 Semantics refers to the meaning or behavior of correctly written code-in other words, what the code actually does when it is executed.
+
+**1.1.4 Machine language vs. high-level language**
+
+Machine language is the language the computer speaks at at it's core were talking 0 and 1 or better said binary. On the other hand we have high level languages that are computer languages still but they use more recognizable symbols and characters making giving the computer instructions to execute easier. 
+
+*ChatGPT's Clarification: Machine language is the language a computer's processor executes at its core. It is represented as binary data—ultimately patterns of 0s and 1s. On the other hand, we have high-level programming languages, which are still languages for giving computers instructions, but they use more recognizable words, symbols, and conventions. This makes it much easier for humans to write and understand instructions that the computer can eventually execute.*
+
+Machine language:
+
+Computer-oriented → difficult for humans to read → binary instructions
+
+High-level language:
+
+Human-oriented → easier for humans to read/write → eventually translated into lower-level instructions
+
+A program written in a high-level programming language is called a **source code** (in contrast to the machine code executed by computers). Similarly, the file containing the source code is called the **source file**.
+
+Source code = the code itself.
+Source file = the file containing the code.
+
+**1.1.5 Compilation vs. Interpretation**
+
+There are two different ways of transforming a program from a high-level programming language into machine language:
+
 
 
 ## 1.2. Section 2 Introduction to Python
