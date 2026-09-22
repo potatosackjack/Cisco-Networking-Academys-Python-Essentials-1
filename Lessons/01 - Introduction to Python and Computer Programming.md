@@ -145,11 +145,9 @@ In confusion I asked ChatGPT if the built-in interpreter is the red highlights f
 *Think of it as two related things:*
 
 1. Code editor
-
 *Looks at your code and can warn you about problems while you're typing.*
 
 2. Python interpreter
-
 *Actually processes and executes your Python program when you run it.*
 
 For example:
@@ -169,7 +167,41 @@ So:
 
 **1.1.7 Compilation vs. Interpretation – Advantages and Disadvantages**
 
+**Compilation**
 
+A compiler translates the source code into another form, often machine code, before the program is executed.
+
+**Advantages:**
+
+The program can run efficiently after compilation.
+Many errors can be detected before the program runs.
+The compiled program can often run without needing the original source code.
+
+**Disadvantages:**
+
+You generally have to compile the program before running it.
+Compilation can take time, especially for large programs.
+The resulting program may need to be compiled separately for different computer architectures.
+
+**Interpretation**
+
+An interpreter processes and executes the program through an interpreter during execution.
+
+**Advantages:**
+
+You can often run code immediately without creating a separate executable first.
+Errors can be identified as the program reaches the problematic code.
+It can make testing and experimenting with code convenient.
+
+**Disadvantages:**
+
+Execution can involve additional processing by the interpreter.
+You need the appropriate interpreter/runtime available to execute the program.
+An error may not be discovered until the program reaches the problematic instruction.
+Simple way to remember
+
+**Compilation:** Translate first → execute afterward.
+**Interpretation:** Process/execute through the interpreter as the program runs.
 
 ## 1.2. Section 2 Introduction to Python
 
