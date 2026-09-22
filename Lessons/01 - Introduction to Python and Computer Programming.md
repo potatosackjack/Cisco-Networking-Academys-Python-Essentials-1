@@ -74,18 +74,21 @@ Symbols: +, -, =, (,), etc.
 Lexis is the collection of words or basic elements that make up a language.
 
 In Python, examples include:
+```
 - print
 - if
 - else
 - while
 - True
-
+```
 3.Syntax
 
 Syntax is the set of rules for how those words and symbols must be arranged.
 
 For example:  
+```
 print("Hello")
+```
 
 4.Semantics
 
@@ -151,13 +154,17 @@ In confusion I asked ChatGPT if the built-in interpreter is the red highlights f
 *Actually processes and executes your Python program when you run it.*
 
 For example:
+```
 pritn("Hello")
+```
 
 *Your editor might immediately put a red underline under pritn.*
 
 *Then, when you actually run the program, Python's interpreter may produce:*
 
+```
 NameError: name 'pritn' is not defined
+```
 
 So:
 
@@ -204,13 +211,160 @@ Simple way to remember
 **Interpretation:** Process/execute through the interpreter as the program runs.
 
 ## 1.2. Section 2 Introduction to Python
+**1.2.1 Python – a tool, not a reptile**
 
-Notes...
+Python is a widely-used, interpreted(Ties in 1.1.5-1.1.7), object-oriented, and high-level programming language with dynamic semantics, used for general-purpose programming.
+
+Python programming language comes from an old BBC television comedy sketch series called **Monty Python's Flying Circus**.
+
+**1.2.2 Who created Python?**
+Guido van Rossum
+
+**1.2.3 A hobby programming project**
+December 1989 Guido van Rossum was looking for a "hobby" programming project that would keep me occupied during the week around Christmas.  
+↳Python was created in attempt to write a new scripting language that would appeal to Unix/C hackers 
+
+In 1999, Guido van Rossum defined his goals for Python:
+- easy and intuitive
+- open source
+- understandable
+- suitable for everyday tasks
+
+**1.2.4 What makes Python so special?**
+- easy to learn
+- easy to teach
+- easy to use
+- easy to understand
+- easy to obtain, install and deploy
+- 🏷️FREE
+
+**1.2.5 Python rivals?**
+**Perl** – a scripting language originally authored by Larry Wall;
+**Ruby** – a scripting language originally authored by Yukihiro Matsumoto.
+
+**1.2.6 Where can we see Python in action?**
+🧠 My honest perspection: Python can be found being used on the backend of computer programs and used to control devices. 
+
+It's used extensively to implement complex Internet services like search engines, cloud storage and tools, social media and so on
+
+*ChatGPT's Clarification:*
+*- Web development — Building websites, web applications, and backend services.*  
+*- Data analysis — Processing, organizing, and analyzing large amounts of data.*  
+*- Artificial intelligence and machine learning — Developing AI models and applications.*  
+*- Automation — Automating repetitive tasks, file management, data entry, and workflows.*  
+*- Scientific computing — Performing calculations, simulations, and research.*  
+*- Cybersecurity — Creating security tools, analyzing data, and automating security tasks.*  
+*- Networking — Automating network configuration, monitoring systems, and working with network devices.*  
+*- Software development — Creating desktop applications, tools, and utilities.*  
+*- Game development — Creating games and game-related tools, particularly with libraries such as Pygame.*  
+*- Web scraping — Collecting information from websites programmatically.*  
+*- Database management — Connecting to, reading, modifying, and organizing database information.*  
+*- Education — Teaching programming and computer science because Python's syntax is relatively accessible.*  
+*- Finance and business — Analyzing financial data, automating processes, and building analytical tools.*  
+*- DevOps and cloud computing — Automating deployments, infrastructure tasks, and system administration.*  
+*- Internet of Things (IoT) — Programming and controlling certain devices and embedded systems.*  
+
+**1.2.7 Why not Python?**
+- low-level programming (Python can work with low-level languages, but Python is not designed to be a low-level language.)
+
+  languages such as C, C++, and Assembly give programmers much more direct control over things like:
+  Memory
+  - CPU instructions
+  - Hardware resources
+  - Pointers and memory addresses
+  - Operating-system interfaces
+  - Performance optimization
+
+- applications for mobile devices
+Python has additional runtime overhead compared with languages designed for native mobile development. That extra layer isn't automatically terrible, but it can make Python less attractive for performance-sensitive mobile applications.
+
+Python is also commonly used behind mobile apps—for example, a mobile app might communicate with a Python backend.
+
+*ChatGPT's Clarification: Python isn't well suited for low-level programming, rather than saying Python cannot interact with low-level languages.*
+
+languages such as C, C++, and Assembly give programmers much more direct control over things like:
+Memory
+- CPU instructions
+- Hardware resources
+- Pointers and memory addresses
+- Operating-system interfaces
+- Performance optimization
+
+*ChatGPT's Clarification: Simple takeaway: Python is a very high-level, general-purpose language. That makes it excellent when you want to accomplish things without dealing with lots of low-level details—but those same abstractions can make it less suitable when you need maximum hardware control, native integration, or performance.*
+
+**1.2.8 There is more than one Python**
+There are two main kinds of Python, called Python 2 and Python 3.
+Python 2 is an older version of the original Python.
+These two versions of Python aren't compatible with each other.
+
+Python 3 isn't just a better version of Python 2 – it is a completely different language, although it's very similar to its predecessor. When you look at them from a distance, they appear to be the same, but when you look closely, though, you notice a lot of differences.
+
+**1.2.9 Python implementations**
+
+🧠 My honest perception: A python implementation is a software language or translator. (However this WRONG)
+
+*ChatGPT's Clarification: A Python implementation is software that acts as a translator and execution environment for programs written in Python*
+
+🆘**Examples of Implementations**
+| Name            | What it is                | Main idea                                              |
+| --------------- | ------------------------- | ------------------------------------------------------ |
+| **CPython**     | Python implementation     | Standard Python implementation, written primarily in C |
+| **PyPy**        | Python implementation     | Python implementation featuring JIT technology         |
+| **Jython**      | Python implementation     | Python for the Java/JVM ecosystem                      |
+| **MicroPython** | Python implementation     | Python for microcontrollers/constrained devices        |
+| **Cython**      | Language/compiler project | Python-like code compiled to C/C++                     |
 
 ## 1.3. Section 3 - Downloading and Installing Python
 
-Notes...
+https://www.python.org/downloads/
+
+To start your work, you need the following tools:
+- editor
+- console
+- debugger
+
+Besides its many useful components, the Python 3 standard installation contains a very simple but extremely useful application named **IDLE (Integrated Development and Learning Environment**).
+
+IDLE opens a new window use to write and amend your code.
+
+That window is the **editor window**. Its only purpose is to be a workplace in which your source code is treated. Do not confuse the editor window with the shell window. They perform different functions.
+
+When you open IDLE, you can use: 
+1. The Shell — This is where you can interact with Python immediately:  
+
+```
+>>> 2 + 2  
+4
+>>> print("Hello")    
+Hello
+```
+
+2. The Editor — That's where you write an entire Python program:  
+
+```
+name = "John"
+age = 25
+
+print(name)
+print(age)
+```
+
+🧠 My honest perception: lets say I download VS Code and then open a .py file, where is IDLE in that process?
+
+*ChatGPT's Clarification: IDLE isn't automatically involved at all if you're using VS Code.*
+
+```
+Option A:
+VS Code → CPython → Your program
+
+Option B:
+IDLE → CPython → Your program
+```
+
+Both VS Code and IDLE can provide an environment for writing and running Python, but they're different tools. VS Code and IDLE are development tools/editors. CPython is the Python implementation that actually provides the machinery for running Python code.
+
 
 ## 1.4. Module 1 Completion Module Test
 
-Notes...
+First attempt: 70%
+Second attempt: 80%
