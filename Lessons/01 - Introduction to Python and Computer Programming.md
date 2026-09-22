@@ -40,7 +40,7 @@ My understanding: Computers don't inherently know they are doing but are able to
 *ChatGPT's Clarification:
 Computers don't inherently understand what they're doing, but they can calculate and produce outputs based on the instructions provided by a program.*
 
-The important distinction is “understand” vs. “execute.”
+The important distinction is “understand” vs. “execute.” Another name for a programming language is executable 
 
 Perspective a. A program is a set of instructions that the computer executes (carries out).
 Perspective b. Programs contain instructions that a computer executes to perform tasks and produce outputs.
@@ -57,7 +57,9 @@ A complete set of known commands is called an **instruction list**, sometimes ab
 
 
 **1.1.3 What makes a language?**
-The four elements that make up a language 1.Alphabet
+The four elements that make up a language 
+
+1.Alphabet
 
 The alphabet is the set of symbols that a language allows you to use.
 
@@ -110,8 +112,9 @@ Source file = the file containing the code.
 
 **1.1.5 Compilation vs. Interpretation**
 
-There are two different ways of transforming a program from a high-level programming language into machine language:
+Computers have two different ways of transforming a program from a high-level programming language into machine language:
 
+ 
 
 
 ## 1.2. Section 2 Introduction to Python
