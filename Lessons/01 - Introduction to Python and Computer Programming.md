@@ -274,8 +274,10 @@ It's used extensively to implement complex Internet services like search engines
 **1.2.7 Why not Python?**
 - low-level programming (Python can work with low-level languages, but Python is not designed to be a low-level language.)
 
+*ChatGPT's Clarification: Python isn't well suited for low-level programming, rather than saying Python cannot interact with low-level languages.*
+
   languages such as C, C++, and Assembly give programmers much more direct control over things like:
-  Memory
+  - Memory
   - CPU instructions
   - Hardware resources
   - Pointers and memory addresses
@@ -287,17 +289,7 @@ Python has additional runtime overhead compared with languages designed for nati
 
 Python is also commonly used behind mobile apps—for example, a mobile app might communicate with a Python backend.
 
-*ChatGPT's Clarification: Python isn't well suited for low-level programming, rather than saying Python cannot interact with low-level languages.*
-
-languages such as C, C++, and Assembly give programmers much more direct control over things like:
-  - Memory
-  - CPU instructions
-  - Hardware resources
-  - Pointers and memory addresses
-  - Operating-system interfaces
-  - Performance optimization
-
-*ChatGPT's Clarification: Simple takeaway: Python is a very high-level, general-purpose language. That makes it excellent when you want to accomplish things without dealing with lots of low-level details—but those same abstractions can make it less suitable when you need maximum hardware control, native integration, or performance.*
+Simple takeaway: Python is a very high-level, general-purpose language. That makes it excellent when you want to accomplish things without dealing with lots of low-level details—but those same abstractions can make it less suitable when you need maximum hardware control, native integration, or performance.
 
 **1.2.8 There is more than one Python**
 There are two main kinds of Python, called Python 2 and Python 3.
