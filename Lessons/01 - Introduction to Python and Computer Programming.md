@@ -102,11 +102,14 @@ Machine language is the language the computer speaks at at it's core were talkin
 
 Machine language:
 
+```
 Computer-oriented → difficult for humans to read → binary instructions
-
+```
 High-level language:
 
+```
 Human-oriented → easier for humans to read/write → eventually translated into lower-level instructions
+```
 
 A program written in a high-level programming language is called a **source code** (in contrast to the machine code executed by computers). Similarly, the file containing the source code is called the **source file**.
 
@@ -121,13 +124,17 @@ Computers have two different ways of transforming a program from a high-level pr
 A compiler takes your source code and translates it into another form—often machine code—before the program runs.
 
 Think:
+```
 Your source code → Compiler → Machine code →  Computer
+```
 
 **Interpretation**
 An interpreter reads your source code and performs the instructions through an interpreter while the program is running.
 
 Think:
-Your source code → Interpreter → Executes it → Computer+
+```
+Your source code → Interpreter → Executes it → Computer
+```
 
 **1.1.6 What does the interpreter do?**
 
@@ -225,18 +232,18 @@ December 1989 Guido van Rossum was looking for a "hobby" programming project tha
 ↳Python was created in attempt to write a new scripting language that would appeal to Unix/C hackers 
 
 In 1999, Guido van Rossum defined his goals for Python:
-- easy and intuitive
-- open source
-- understandable
-- suitable for everyday tasks
+  - easy and intuitive
+  - open source
+  - understandable
+  - suitable for everyday tasks
 
 **1.2.4 What makes Python so special?**
-- easy to learn
-- easy to teach
-- easy to use
-- easy to understand
-- easy to obtain, install and deploy
-- 🏷️FREE
+  - easy to learn
+  - easy to teach
+  - easy to use
+  - easy to understand
+  - easy to obtain, install and deploy
+  - 🏷️FREE
 
 **1.2.5 Python rivals?**
 **Perl** – a scripting language originally authored by Larry Wall;
@@ -283,12 +290,12 @@ Python is also commonly used behind mobile apps—for example, a mobile app migh
 *ChatGPT's Clarification: Python isn't well suited for low-level programming, rather than saying Python cannot interact with low-level languages.*
 
 languages such as C, C++, and Assembly give programmers much more direct control over things like:
-Memory
-- CPU instructions
-- Hardware resources
-- Pointers and memory addresses
-- Operating-system interfaces
-- Performance optimization
+  - Memory
+  - CPU instructions
+  - Hardware resources
+  - Pointers and memory addresses
+  - Operating-system interfaces
+  - Performance optimization
 
 *ChatGPT's Clarification: Simple takeaway: Python is a very high-level, general-purpose language. That makes it excellent when you want to accomplish things without dealing with lots of low-level details—but those same abstractions can make it less suitable when you need maximum hardware control, native integration, or performance.*
 
