@@ -10,9 +10,9 @@ Notes...
 
 Notes...
 
-## 1.3. Section 3 - Downloading and Installing
+## 1.3. Section 3 - Downloading and Installing Python
 
-Python
+Notes...
 
 ## 1.4. Module 1 Completion Module Test
 
