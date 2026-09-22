@@ -50,11 +50,13 @@ Computer: executes that instruction → Hello
 
 **1.1.2 Natural languages vs. programming languages**
 
-Computers have their own language, too, called machine language
+Computers have their own language called machine language
 
 A complete set of known commands is called an **instruction list**, sometimes abbreviated to **IL**
 ↳ Different types of computers may vary depending on the size of their ILs, and the instructions could be completely different in different models.
 
+
+**1.1.3 What makes a language?**
 The four elements that make up a language 1.Alphabet
 
 The alphabet is the set of symbols that a language allows you to use.
