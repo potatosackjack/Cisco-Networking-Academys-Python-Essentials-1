@@ -128,6 +128,49 @@ Your source code → Interpreter → Executes it → Computer+
 
 **1.1.6 What does the interpreter do?**
 
+The interpreter reads the source code in a way that is common in Western culture: from top to bottom and from left to right. There are some exceptions
+
+If the compiler finds an error, it finishes its work immediately. The only result in this case is an error message. (Ties to 1.1.5)
+
+The interpreter will inform you where an error is located and what caused it. However the messages may be misleading because an interpreter isn't able to follow intentions so while it detects errors it may miss their real cause. 
+
+For example if you try to use a function that does exist in a high level language it may show you an the error but it wont show you what you intended to use in that space.  
+
+*ChatGPT's Clarification:An interpreter can identify and report errors in a program, often indicating where the error occurred and providing information about what went wrong. However, its error messages can sometimes be misleading because the interpreter cannot know the programmer's intentions. It can identify the problem it encounters, but it may not be able to identify the underlying mistake that caused it.*
+
+In confusion I asked ChatGPT if the built-in interpreter is the red highlights for errors in side the code editor?
+
+*ChatGPT's Clarification: The red highlights you see in a code editor are usually produced by the editor's syntax checker, linter, or language-analysis tools. They're not necessarily the Python interpreter itself.*
+
+*Think of it as two related things:*
+
+*1. Code editor*
+
+*Looks at your code and can warn you about problems while you're typing.*
+
+*2. Python interpreter*
+
+*Actually processes and executes your Python program when you run it.*
+
+*For example:*
+pritn("Hello")
+
+*Your editor might immediately put a red underline under pritn.*
+
+*Then, when you actually run the program, Python's interpreter may produce:*
+
+NameError: name 'pritn' is not defined
+
+*So:*
+
+*🔴 Red underline: “Hey, I think there's a problem here.”*
+*▶️ Interpreter: “I actually tried to execute this and here's the error I encountered.”*
+
+
+**1.1.7 Compilation vs. Interpretation – Advantages and Disadvantages**
+
+
+
 ## 1.2. Section 2 Introduction to Python
 
 Notes...
