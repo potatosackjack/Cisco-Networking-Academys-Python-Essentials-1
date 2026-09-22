@@ -12,25 +12,25 @@ However, I didn't know about Dutch programmer **Guido van Rossum**, who created 
 
 Syllabus:
 
--the universal concepts of computer programming. 
--the syntax and semantics of the Python language. 
--practical skills in resolving typical implementation challenges. 
--how to use the most important elements of the Python Standard Library. 
--how to install your runtime environment. 
--how to design, develop, test, and debug simple Python programs.    
+- the universal concepts of computer programming. 
+- the syntax and semantics of the Python language. 
+- practical skills in resolving typical implementation challenges. 
+- how to use the most important elements of the Python Standard Library. 
+- how to install your runtime environment. 
+- how to design, develop, test, and debug simple Python programs.    
 
 The four modules:
 
-Module 1
+**Module 1**
 Introduction to Python and computer programming
 
-Module 2
+**Module 2**
 Data types, variables, basic input-output operations, and basic operators
 
-Module 3
+**Module 3**
 Boolean values, conditional execution, loops, lists and list processing, logical and bitwise operations
 
-Module 4
+**Module 4**
 Functions, tuples, dictionaries, exceptions, and data processing.
 
 ## 1.1. Section 1 Introduction to Programming
