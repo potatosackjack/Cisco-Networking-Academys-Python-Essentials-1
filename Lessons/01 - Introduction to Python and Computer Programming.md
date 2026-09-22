@@ -163,8 +163,8 @@ NameError: name 'pritn' is not defined
 
 *So:*
 
-*🔴 Red underline: “Hey, I think there's a problem here.”*
-*▶️ Interpreter: “I actually tried to execute this and here's the error I encountered.”*
+🔴 *Red underline: “Hey, I think there's a problem here.”*  
+▶️ *Interpreter: “I actually tried to execute this and here's the error I encountered.”*
 
 
 **1.1.7 Compilation vs. Interpretation – Advantages and Disadvantages**
