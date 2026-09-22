@@ -55,40 +55,37 @@ Computers have their own language, too, called machine language
 A complete set of known commands is called an **instruction list**, sometimes abbreviated to **IL**
 ↳ Different types of computers may vary depending on the size of their ILs, and the instructions could be completely different in different models.
 
-The four elements that make up a language An 1.Alphabet
+The four elements that make up a language 1.Alphabet
 
 The alphabet is the set of symbols that a language allows you to use.
 
 In programming, this can include:
 
-Letters: A-Z, a-z
-Numbers: 0-9
-Symbols: +, -, =, (,), etc.
+Letters: A-Z, a-z. 
+Numbers: 0-9. 
+Symbols: +, -, =, (,), etc.  
 
 2. A Lexis
 
 Lexis is the collection of words or basic elements that make up a language.
 
 In Python, examples include:
-print
-if
-else
-while
-True
-
+- print
+- if
+- else
+- while
+- True
 
 3. Syntax
 
 Syntax is the set of rules for how those words and symbols must be arranged.
 
-For example:
+For example:  
 print("Hello")
 
 4.Semantics
 
-Semantics refers to the meaning or behavior of correctly written code-in other words, what the code
-
-actually does when it is executed.
+Semantics refers to the meaning or behavior of correctly written code-in other words, what the code actually does when it is executed.
 
 
 ## 1.2. Section 2 Introduction to Python
