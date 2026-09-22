@@ -118,27 +118,15 @@ Computers have two different ways of transforming a program from a high-level pr
 A compiler takes your source code and translates it into another form—often machine code—before the program runs.
 
 Think:
-Your source code
-      ↓
-   Compiler
-      ↓
-Machine code
-      ↓
-   Computer
-
-
+Your source code → Compiler → Machine code →  Computer
 
 **Interpretation**
 An interpreter reads your source code and performs the instructions through an interpreter while the program is running.
 
 Think:
-Your source code
-      ↓
-  Interpreter
-      ↓
-  Executes it
-      ↓
-   Computer
+Your source code → Interpreter → Executes it → Computer+
+
+**1.1.6 What does the interpreter do?**
 
 ## 1.2. Section 2 Introduction to Python
 
