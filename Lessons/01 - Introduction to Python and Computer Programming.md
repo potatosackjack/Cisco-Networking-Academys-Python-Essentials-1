@@ -110,7 +110,7 @@ A program written in a high-level programming language is called a **source code
 Source code = the code itself.
 Source file = the file containing the code.
 
-⚠️**1.1.5 Compilation vs. Interpretation**
+🆘**1.1.5 Compilation vs. Interpretation**
 
 Computers have two different ways of transforming a program from a high-level programming language into machine language:
 
