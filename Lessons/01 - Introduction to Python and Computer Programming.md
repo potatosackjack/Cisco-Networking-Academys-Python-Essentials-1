@@ -21,21 +21,75 @@ Syllabus:
 
 The four modules:
 
-**Module 1**
+**Module 1:**
 Introduction to Python and computer programming
 
-**Module 2**
+**Module 2:**
 Data types, variables, basic input-output operations, and basic operators
 
-**Module 3**
+**Module 3:**
 Boolean values, conditional execution, loops, lists and list processing, logical and bitwise operations
 
-**Module 4**
+**Module 4:**
 Functions, tuples, dictionaries, exceptions, and data processing.
 
 ## 1.1. Section 1 Introduction to Programming
+**1.1.1 How does a computer program work?**
+My understanding: Computers don't inherently know they are doing but are able to calculate and give outputs based on the level of their program. 
 
-Notes...
+*ChatGPT's Clarification:
+Computers don't inherently understand what they're doing, but they can calculate and produce outputs based on the instructions provided by a program.*
+
+The important distinction is “understand” vs. “execute.”
+
+Perspective a. A program is a set of instructions that the computer executes (carries out).
+Perspective b. Programs contain instructions that a computer executes to perform tasks and produce outputs.
+
+Program: “Computer, display Hello.”
+Computer: executes that instruction → Hello
+
+**1.1.2 Natural languages vs. programming languages**
+
+Computers have their own language, too, called machine language
+
+A complete set of known commands is called an **instruction list**, sometimes abbreviated to **IL**
+↳ Different types of computers may vary depending on the size of their ILs, and the instructions could be completely different in different models.
+
+The four elements that make up a language An 1.Alphabet
+
+The alphabet is the set of symbols that a language allows you to use.
+
+In programming, this can include:
+
+Letters: A-Z, a-z
+Numbers: 0-9
+Symbols: +, -, =, (,), etc.
+
+2. A Lexis
+
+Lexis is the collection of words or basic elements that make up a language.
+
+In Python, examples include:
+print
+if
+else
+while
+True
+
+
+3. Syntax
+
+Syntax is the set of rules for how those words and symbols must be arranged.
+
+For example:
+print("Hello")
+
+4.Semantics
+
+Semantics refers to the meaning or behavior of correctly written code-in other words, what the code
+
+actually does when it is executed.
+
 
 ## 1.2. Section 2 Introduction to Python
 
