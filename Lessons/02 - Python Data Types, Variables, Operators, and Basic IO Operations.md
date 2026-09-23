@@ -637,7 +637,7 @@ Both of these kinds of numbers differ significantly in how they're stored in a c
 
 Python doesn't allow the interjection  of any characters that are not digits inside to a number.
 
-number like this: ```11,111,111```, or like this: ```11.111.111```, or even like this: ```11 111 111```.
+**Prohibited**: ```11,111,111```, or like this: ```11.111.111```, or even like this: ```11 111 111```.
 
 It's clear that this provision makes it easier to read, especially when the number consists of many digits. However, Python doesn't accept things like these. It's prohibited. What Python does allow, though, is the use of underscores in numeric literals.*
 
@@ -649,3 +649,13 @@ And how do we code negative numbers in Python? As usual ‒ by adding a minus. Y
 
 Positive numbers do not need to be preceded by the plus sign, but it's permissible, if you wish to do it. The following lines describe the same number: ```+11111111``` and ```11111111```.
 
+Python allows integers to be written as decimal, binary, octal, or hexadecimal numbers.
+
+**Decimal** — base 10 → 25
+**Binary** — base 2 → 0b11001
+**Octal** — base 8 → 0o31
+**Hexadecimal** — base 16 → 0x19
+
+The important thing is that octal and hexadecimal are ways of writing integer values. They don't represent a different type of number in Python.
+
+## 2.2.3 Floats
