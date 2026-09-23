@@ -136,7 +136,7 @@ Think:
 Your source code → Interpreter → Executes it → Computer
 ```
 
-## 1.1.6 What does the interpreter do?**
+## 1.1.6 What does the interpreter do?
 
 The interpreter reads the source code in a way that is common in Western culture: from top to bottom and from left to right. There are some exceptions
 
@@ -179,7 +179,7 @@ So:
 ▶️ *Interpreter: “I actually tried to execute this and here's the error I encountered.”*
 
 
-## 1.1.7 Compilation vs. Interpretation – Advantages and Disadvantages**
+## 1.1.7 Compilation vs. Interpretation – Advantages and Disadvantages
 
 **Compilation**
 
@@ -298,7 +298,7 @@ These two versions of Python aren't compatible with each other.
 
 Python 3 isn't just a better version of Python 2 – it is a completely different language, although it's very similar to its predecessor. When you look at them from a distance, they appear to be the same, but when you look closely, though, you notice a lot of differences.
 
-## 1.2.9 Python implementations**
+## 1.2.9 Python implementations
 
 🧠 My honest perception: A python implementation is a software language or translator. (However this WRONG)
 
