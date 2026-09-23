@@ -28,3 +28,18 @@ repetition, that information will become more solid and eventually feel natural.
 ## 2.1 Section 2 The "Hello World" Program
 **2.1.1 Your very first program**
 
+```
+print("Hello World!")
+```
+this first program consists of: 
+- the word print
+- an opening parenthesis
+- a quotation mark
+- a line of text: Hello, World!
+- another quotation mark
+- a closing parenthesis
+
+Each element carrying an important role
+
+**2.1.2 The print() function**
+
