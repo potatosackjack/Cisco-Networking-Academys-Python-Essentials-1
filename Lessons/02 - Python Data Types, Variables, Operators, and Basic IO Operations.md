@@ -25,7 +25,7 @@ into flashcards and review, like **interpreters vs. compilers**.
 I imagine new terms and syntax will initially become soft information, but with consistent study and 
 repetition, that information will become more solid and eventually feel natural.
 
-## 2.1 Section 2 The "Hello World" Program
+## 2.1 Section 2 The "Hello World!" Program
 **2.1.1 Your very first program**
 
 ```
@@ -42,4 +42,59 @@ this first program consists of:
 Each element carrying an important role
 
 **2.1.2 The print() function**
+Print in the line of text below is a function 
+```
+print("Hello World!")
+```
+That doesn't mean that wherever the word appears it is always a function name.
+
+A function (in this context) is a separate part of the computer code able to:
+- cause some **effect** (e.g., send text to the terminal, create a file, draw an image, play a sound, etc.) Unheard of in mathematics this is why functions in code are considered more dynamic. 
+- valuate a value (e.g., the square root of a value or the length of a given text) and return it as the function's **result**.
+
+Moreover, many Python functions can do the above two things together. ‒ some Python functions don't need any argument.
+
+**Where do the functions come from?**
+-  From Python itself (it is built-in)
+-  Python's add-ons named modules
+-  Write them indepedently
+
+Print function is self-evident
+
+**2.1.3 Function arguments**
+As we said before, a function may have:
+
+- an effect (Example: something appears on the screen)
+- a result (Example: ```x = len("Python")``` produces the result 6) 
+There's also a third, very important, function component ‒ the **argument(s)**.
+
+🔑 If you want to deliver one or more arguments to a function, you place them inside the parentheses. If you're going to use a function which doesn't take any argument, you still have to have the parentheses.
+
+**String as the print() function's argument**
+
+String: a data type used to represent text. It is essentially a sequence of characters (which can include letters, numbers, symbols, and spaces) bundled together as a single unit.
+
+```
+print("Hello, World!")
+ ↑          ↑
+function    argument
+```
+The string is *Hello, World!*
+
+Almost anything you put inside the quotes will be taken literally, not as code, but as **data**.
+
+🧠 My honest perception: The world argument was making grasping the concept very difficult because I instinctively couldn't
+separate the idea from a argument in regards to a disagreement. 
+
+So 
+
+I did research on the word argument and the word comes from the Latin word *argumentum*, meaning "logical proof, evidence, or token." It stems from the Latin Root word *arguere*, which means "to make clear, make known, or prove."  
+↓  
+Old French: The term entered Old French as arguement in the 13th century, meaning reasoning or an accusation.  
+↓  
+It appeared in English early 14th century (recorded before 1325 in legal texts like the Statutes of the Realm). At this time, it meant a statement or set of reasons offered in support of a proposition or to establish a truth.  
+↓  
+By the 1590s, the word expanded to mean a subject of debate or discussion.  
+
+
 
