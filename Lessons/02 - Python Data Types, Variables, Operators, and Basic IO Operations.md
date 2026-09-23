@@ -25,8 +25,8 @@ into flashcards and review, like **interpreters vs. compilers**.
 I imagine new terms and syntax will initially become soft information, but with consistent study and 
 repetition, that information will become more solid and eventually feel natural.
 
-## 2.1 Section 2 The "Hello World!" Program
-**2.1.1 Your very first program**
+# 2.1 Section 2 The "Hello World!" Program
+## 2.1.1 Your very first program
 
 ```
 print("Hello World!")
@@ -41,7 +41,7 @@ this first program consists of:
 
 Each element carrying an important role
 
-**2.1.2 The print() function**
+## 2.1.2 The print() function
 
 Print in the line of text below is a function 
 ```
@@ -62,7 +62,7 @@ Moreover, many Python functions can do the above two things together. ‒ some P
 
 Print function is self-evident
 
-**2.1.3 Function arguments**
+## 2.1.3 Function arguments
 As we said before, a function may have:
 
 - an effect (Example: something appears on the screen)
@@ -96,6 +96,128 @@ Old French: The term entered Old French as arguement in the 13th century, meanin
 It appeared in English early 14th century (recorded before 1325 in legal texts like the Statutes of the Realm). At this time, it meant a statement or set of reasons offered in support of a proposition or to establish a truth.  
 ↓  
 By the 1590s, the word expanded to mean a subject of debate or discussion.  
+
+## 2.1.4 Function invocation**
+
+It basically means:
+
+Calling a function so that it actually runs.
+
+### Start with a function
+
+Suppose we define a function:
+
+```python
+def greet():
+    print("Hello!")
+```
+
+At this point, Python has **defined** the function, but it hasn't run it.
+
+Think:
+
+"Here's a function called `greet`. Remember what it does."
+
+### Now invoke the function
+
+```python
+greet()
+```
+
+That is a **function invocation**.
+
+You're telling Python:
+
+"Run the `greet` function now."
+
+The result:
+
+```text
+Hello!
+```
+
+Why call it "invocation"?
+
+**Invoke = call upon something to perform an action.**
+
+So:
+
+**Function invocation = calling a function to execute it.**
+
+You may hear these terms used almost interchangeably:
+
+* **Call a function**
+* **Invoke a function**
+* **Function call**
+* **Function invocation**
+
+They're referring to essentially the same action.
+
+**Where do arguments come in?**
+This is where it connects to what you've already been studying.
+
+Suppose:
+
+```python
+def greet(name):
+    print("Hello", name)
+```
+
+`name` is a **parameter**.
+
+Now:
+
+```python
+greet("potatosackjack")
+```
+
+You're **invoking** the function and providing `"potatosackjack"` as an **argument**.
+
+```text
+def greet(name):
+          ↑
+       parameter
+
+greet("potatosackjack")
+      ↑
+    argument
+
+greet("potatosackjack")
+      ↑
+function invocation
+```
+
+The function executes:
+
+```text
+Hello potatosackjack
+```
+
+One important distinction
+
+Simply **writing a function definition** doesn't invoke it:
+
+```python
+def greet():
+    print("Hello")
+```
+
+You're defining it.
+
+Writing:
+
+```python
+greet()
+```
+
+**invokes it.**
+
+So a great note for your studies would be:
+
+Function invocation is the act of calling a function so that its instructions are executed. Arguments can be provided during the invocation to give the function the data it needs.
+
+And this connects nicely to your earlier question about arguments: **an argument is something you provide during a function call/invocation.**
+
 
 
 
