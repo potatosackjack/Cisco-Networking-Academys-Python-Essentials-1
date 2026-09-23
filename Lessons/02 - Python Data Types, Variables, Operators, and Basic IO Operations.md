@@ -474,4 +474,99 @@ The important idea is:
 
 In other words a keyword argument is an argument passed to a function using the name of the parameter it should be assigned to. Unlike a positional argument, where the argument's meaning depends on its position, a keyword argument explicitly identifies its parameter, so the order does not matter.
 
+There isn't one universal list of **keyword arguments** because keyword arguments depend on the **parameters a particular function accepts**. But here are some common ones you'll encounter in beginner Python:
+
+* **`end`** — controls what `print()` displays after its output.
+
+  ```python
+  print("Hello", end=" ")
+  ```
+
+* **`sep`** — controls what `print()` puts between multiple values.
+
+  ```python
+  print("Hello", "World", sep="-")
+  ```
+
+* **`file`** — specifies where `print()` sends its output.
+
+  ```python
+  print("Hello", file=my_file)
+  ```
+
+* **`flush`** — controls whether `print()` immediately sends its output.
+
+  ```python
+  print("Loading...", flush=True)
+  ```
+
+* **`start`** — specifies the starting value for `range()`-like operations such as `enumerate()`.
+
+  ```python
+  enumerate(["a", "b"], start=1)
+  ```
+
+* **`key`** — tells functions such as `sorted()` what to use when determining how to sort items.
+
+  ```python
+  sorted(words, key=len)
+  ```
+
+* **`reverse`** — tells functions such as `sorted()` whether to reverse the order.
+
+  ```python
+  sorted(numbers, reverse=True)
+  ```
+
+The important thing is that **`end`, `sep`, `key`, `reverse`, etc. aren't automatically keyword arguments**. They are **parameter names** when defined by a function, and they become keyword arguments when you provide values using those names:
+
+```python
+print("Hello", end=" ")
+sorted(numbers, reverse=True)
+```
+
+So don't try to memorize a giant list. **Learn the parameter names of the functions you're using.**
+
+
+## 2.1.12   LAB   The print() function and its arguments
+
+Modify the first line of code in the editor, using the sep and end keywords, to match the expected output. Use the two print() functions in the editor.
+
+Input: 
+
+```
+print("Programming","Essentials","in", sep="***", end="...")
+print("Python")
+```
+
+Output:
+
+```
+Programming***Essentials***in...Python
+```
+
+**end** — controls what print() displays after its output.
+**sep** — controls what print() puts between multiple values.
+
+## 2.1.14 SECTION SUMMARY
+
+1. The print() function is a built-in function. It prints/outputs a specified message to the screen/console window.
+
+2. Built-in functions, contrary to user-defined functions, are always available and don't have to be imported. Python 3.8 comes with 69 built-in functions. You can find their full list provided in alphabetical order in the Python Standard Library.
+
+3. To call a function (this process is known as function invocation or function call), you need to use the function name followed by parentheses. You can pass arguments into a function by placing them inside the parentheses. You must separate arguments with a comma, e.g., print("Hello,", "world!"). An "empty" print() function outputs an empty line to the screen.
+
+4. Python strings are delimited with quotes, e.g., "I am a string" (double quotes), or 'I am a string, too' (single quotes).
+
+5. Computer programs are collections of instructions. An instruction is a command to perform a specific task when executed, e.g., to print a certain message to the screen.
+
+6. In Python strings the backslash (\) is a special character which announces that the next character has a different meaning, e.g., \n (the newline character) starts a new output line.
+
+7. Positional arguments are the ones whose meaning is dictated by their position, e.g., the second argument is outputted after the first, the third is outputted after the second, etc.
+
+8. Keyword arguments are the ones whose meaning is not dictated by their location, but by a special word (keyword) used to identify them.
+
+9. The end and sep parameters can be used for formatting the output of the print() function. The sep parameter specifies the separator between the outputted arguments, e.g., print("H", "E", "L", "L", "O", sep="-"), whereas the end parameter specifies what to print at the end of the print statement.
+
+# 2.2 Python Literals
 
