@@ -250,7 +250,7 @@ In 1999, Guido van Rossum defined his goals for Python:
 **Ruby** – a scripting language originally authored by Yukihiro Matsumoto.
 
 **1.2.6 Where can we see Python in action?**
-🧠 My honest perspection: Python can be found being used on the backend of computer programs and used to control devices. 
+🧠 My honest perception: Python can be found being used on the backend of computer programs and used to control devices. 
 
 It's used extensively to implement complex Internet services like search engines, cloud storage and tools, social media and so on
 
