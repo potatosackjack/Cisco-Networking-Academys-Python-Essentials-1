@@ -618,4 +618,20 @@ That's a really useful distinction to have in your Module 2 notes.
 
 ## 2.2.1 Integers
 
+**Numbers in Python**
+
+**Integer (int)** — A whole number with no decimal or fractional part.
+-Examples: 1, 25, -10, 100
+
+**Float (float)** — A number that can contain a decimal or fractional part.
+-Examples: 3.14, 2.5, -0.75
+
+Easy way to remember
+
+**Integer** = whole number
+**Float** = number with a decimal
+
+And one important detail: a float doesn't have to have a fractional value that isn't zero. For example, 5.0 is still a float because it's written with a decimal point.
+
+
 
