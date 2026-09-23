@@ -114,9 +114,8 @@ Human-oriented → easier for humans to read/write → eventually translated int
 
 A program written in a high-level programming language is called a **source code** (in contrast to the machine code executed by computers). Similarly, the file containing the source code is called the **source file**.
 
-Source code = the code itself. 
-
-Source file = the file containing the code.
+**Source code** = the code itself. 
+**Source file** = the file containing the code.  
 
 ## 🆘1.1.5 Compilation vs. Interpretation
 
