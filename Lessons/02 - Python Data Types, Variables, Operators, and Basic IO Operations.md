@@ -218,7 +218,76 @@ Function invocation is the act of calling a function so that its instructions ar
 
 And this connects nicely to your earlier question about arguments: **an argument is something you provide during a function call/invocation.**
 
+## 2.1.5   LAB   Working with the print() function
 
+The ```print()``` command, which is one of the easiest directives in Python, simply prints out a line to the screen.
+
+LAB:
+
+Use the ```print()``` function to print the line ```Hello, Python!``` to the screen. Use double quotes around the string.
+
+Input: 
+
+```
+print("Hello,Python!")
+```
+
+Output:
+
+```
+Hello,Python!
+```
+
+Having done that, use the ```print()``` function again, but this time print your first name.  
+
+Input: 
+
+```
+print("Hello,Potatosackjack!")
+```
+
+Output:
+
+```
+Hello,Potatosackjack!
+```
+
+Remove the double quotes and run your code. Watch Python's reaction. What kind of error is thrown?
+
+Input: 
+
+```
+print(Hello,Potatosackjack!)
+```
+
+Output:
+
+```
+File "main.py", line 1
+    print(Hello,Potatosackjack!)
+                              ^
+SyntaxError: invalid syntax
+```
+
+Then, remove the parentheses, put back the double quotes, and run your code again. What kind of error is thrown this time?
+
+Input: 
+
+```
+print"Hello,Potatosackjack!"
+```
+
+Output:
+
+```
+File "main.py", line 1
+    print"Hello,Potatosackjack!"
+                               ^
+SyntaxError: invalid syntax
+
+```
+
+## 2.1.6 The print() function and its effect, arguments, and values returned
 
 
 
