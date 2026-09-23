@@ -34,7 +34,7 @@ Boolean values, conditional execution, loops, lists and list processing, logical
 Functions, tuples, dictionaries, exceptions, and data processing.
 
 # 1.1. Section 1 Introduction to Programming
-## 1.1.1 How does a computer program work?**
+## 1.1.1 How does a computer program work?
 My understanding: Computers don't inherently know they are doing but are able to calculate and give outputs based on the level of their program. 
 
 *ChatGPT's Clarification:
