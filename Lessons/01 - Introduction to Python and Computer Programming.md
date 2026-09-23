@@ -247,7 +247,9 @@ In 1999, Guido van Rossum defined his goals for Python:
   - 🏷️FREE
 
 ## 1.2.5 Python rivals?
-**Perl** – a scripting language originally authored by Larry Wall;
+
+**Perl** – a scripting language originally authored by Larry Wall
+
 **Ruby** – a scripting language originally authored by Yukihiro Matsumoto.
 
 **1.2.6 Where can we see Python in action?**
@@ -256,6 +258,7 @@ In 1999, Guido van Rossum defined his goals for Python:
 It's used extensively to implement complex Internet services like search engines, cloud storage and tools, social media and so on
 
 *ChatGPT's Clarification:*
+
 *- Web development — Building websites, web applications, and backend services.*  
 *- Data analysis — Processing, organizing, and analyzing large amounts of data.*  
 *- Artificial intelligence and machine learning — Developing AI models and applications.*  
@@ -273,11 +276,12 @@ It's used extensively to implement complex Internet services like search engines
 *- Internet of Things (IoT) — Programming and controlling certain devices and embedded systems.*  
 
 ## 1.2.7 Why not Python?
-- low-level programming (Python can work with low-level languages, but Python is not designed to be a low-level language.)
+
+1) low-level programming (Python can work with low-level languages, but Python is not designed to be a low-level language.)
 
 *ChatGPT's Clarification: Python isn't well suited for low-level programming, rather than saying Python cannot interact with low-level languages.*
 
-  languages such as C, C++, and Assembly give programmers much more direct control over things like:
+Languages such as C, C++, and Assembly give programmers much more direct control over things like:
   - Memory
   - CPU instructions
   - Hardware resources
@@ -285,7 +289,7 @@ It's used extensively to implement complex Internet services like search engines
   - Operating-system interfaces
   - Performance optimization
 
-- applications for mobile devices
+2) applications for mobile devices
 Python has additional runtime overhead compared with languages designed for native mobile development. That extra layer isn't automatically terrible, but it can make Python less attractive for performance-sensitive mobile applications.
 
 Python is also commonly used behind mobile apps—for example, a mobile app might communicate with a Python backend.
