@@ -569,4 +569,8 @@ Programming***Essentials***in...Python
 9. The end and sep parameters can be used for formatting the output of the print() function. The sep parameter specifies the separator between the outputted arguments, e.g., print("H", "E", "L", "L", "O", sep="-"), whereas the end parameter specifies what to print at the end of the print statement.
 
 # 2.2 Python Literals
+## 2.2.1 Literals – the data in itself
 
+A literal is a value that you type directly into your code.
+
+🧠 My honest perception: I don't know why I get stuck up on such basic concepts. 
