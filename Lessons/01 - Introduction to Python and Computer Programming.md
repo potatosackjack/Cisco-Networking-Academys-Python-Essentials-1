@@ -1,4 +1,4 @@
-## Expectations
+**Expectations**
 
 At this point, I've already begun the modules and have made it to the middle of Module 2. However, I can still reflect on what I expected when starting Module 1.
 
@@ -33,8 +33,8 @@ Boolean values, conditional execution, loops, lists and list processing, logical
 **Module 4:**
 Functions, tuples, dictionaries, exceptions, and data processing.
 
-## 1.1. Section 1 Introduction to Programming
-**1.1.1 How does a computer program work?**
+# 1.1. Section 1 Introduction to Programming
+## 1.1.1 How does a computer program work?**
 My understanding: Computers don't inherently know they are doing but are able to calculate and give outputs based on the level of their program. 
 
 *ChatGPT's Clarification:
@@ -48,7 +48,7 @@ Perspective b. Programs contain instructions that a computer executes to perform
 Program: “Computer, display Hello.”
 Computer: executes that instruction → Hello
 
-**1.1.2 Natural languages vs. programming languages**
+## 1.1.2 Natural languages vs. programming languages
 
 Computers have their own language called machine language
 
@@ -56,7 +56,7 @@ A complete set of known commands is called an **instruction list**, sometimes ab
 ↳ Different types of computers may vary depending on the size of their ILs, and the instructions could be completely different in different models. (Ties into 1.1.1)
 
 
-**1.1.3 What makes a language?**
+## 1.1.3 What makes a language?
 The four elements that make up a language 
 
 1. Alphabet
@@ -94,7 +94,7 @@ print("Hello")
 
 Semantics refers to the meaning or behavior of correctly written code-in other words, what the code actually does when it is executed.
 
-**1.1.4 Machine language vs. high-level language**
+## 1.1.4 Machine language vs. high-level language
 
 Machine language is the language the computer speaks at at it's core were talking 0 and 1 or better said binary. On the other hand we have high level languages that are computer languages still but they use more recognizable symbols and characters making giving the computer instructions to execute easier. 
 
@@ -116,7 +116,7 @@ A program written in a high-level programming language is called a **source code
 Source code = the code itself.
 Source file = the file containing the code.
 
-🆘**1.1.5 Compilation vs. Interpretation**
+## 🆘1.1.5 Compilation vs. Interpretation
 
 Computers have two different ways of transforming a program from a high-level programming language into machine language:
 
@@ -136,7 +136,7 @@ Think:
 Your source code → Interpreter → Executes it → Computer
 ```
 
-**1.1.6 What does the interpreter do?**
+## 1.1.6 What does the interpreter do?**
 
 The interpreter reads the source code in a way that is common in Western culture: from top to bottom and from left to right. There are some exceptions
 
@@ -179,7 +179,7 @@ So:
 ▶️ *Interpreter: “I actually tried to execute this and here's the error I encountered.”*
 
 
-**1.1.7 Compilation vs. Interpretation – Advantages and Disadvantages**
+## 1.1.7 Compilation vs. Interpretation – Advantages and Disadvantages**
 
 **Compilation**
 
@@ -218,16 +218,16 @@ Simple way to remember
 **Interpretation:** Process/execute through the interpreter as the program runs.
 
 ## 1.2. Section 2 Introduction to Python
-**1.2.1 Python – a tool, not a reptile**
+# 1.2.1 Python – a tool, not a reptile
 
 Python is a widely-used, interpreted(Ties in 1.1.5-1.1.7), object-oriented, and high-level programming language with dynamic semantics, used for general-purpose programming.
 
 Python programming language comes from an old BBC television comedy sketch series called **Monty Python's Flying Circus**.
 
-**1.2.2 Who created Python?**
+## 1.2.2 Who created Python?
 Guido van Rossum
 
-**1.2.3 A hobby programming project**
+## 1.2.3 A hobby programming project
 December 1989 Guido van Rossum was looking for a "hobby" programming project that would keep me occupied during the week around Christmas.  
 ↳Python was created in attempt to write a new scripting language that would appeal to Unix/C hackers 
 
@@ -237,7 +237,7 @@ In 1999, Guido van Rossum defined his goals for Python:
   - understandable
   - suitable for everyday tasks
 
-**1.2.4 What makes Python so special?**
+## 1.2.4 What makes Python so special?
   - easy to learn
   - easy to teach
   - easy to use
@@ -245,7 +245,7 @@ In 1999, Guido van Rossum defined his goals for Python:
   - easy to obtain, install and deploy
   - 🏷️FREE
 
-**1.2.5 Python rivals?**
+## 1.2.5 Python rivals?
 **Perl** – a scripting language originally authored by Larry Wall;
 **Ruby** – a scripting language originally authored by Yukihiro Matsumoto.
 
@@ -271,7 +271,7 @@ It's used extensively to implement complex Internet services like search engines
 *- DevOps and cloud computing — Automating deployments, infrastructure tasks, and system administration.*  
 *- Internet of Things (IoT) — Programming and controlling certain devices and embedded systems.*  
 
-**1.2.7 Why not Python?**
+## 1.2.7 Why not Python?
 - low-level programming (Python can work with low-level languages, but Python is not designed to be a low-level language.)
 
 *ChatGPT's Clarification: Python isn't well suited for low-level programming, rather than saying Python cannot interact with low-level languages.*
@@ -291,14 +291,14 @@ Python is also commonly used behind mobile apps—for example, a mobile app migh
 
 Simple takeaway: Python is a very high-level, general-purpose language. That makes it excellent when you want to accomplish things without dealing with lots of low-level details—but those same abstractions can make it less suitable when you need maximum hardware control, native integration, or performance.
 
-**1.2.8 There is more than one Python**
+## 1.2.8 There is more than one Python**
 There are two main kinds of Python, called Python 2 and Python 3.
 Python 2 is an older version of the original Python.
 These two versions of Python aren't compatible with each other.
 
 Python 3 isn't just a better version of Python 2 – it is a completely different language, although it's very similar to its predecessor. When you look at them from a distance, they appear to be the same, but when you look closely, though, you notice a lot of differences.
 
-**1.2.9 Python implementations**
+## 1.2.9 Python implementations**
 
 🧠 My honest perception: A python implementation is a software language or translator. (However this WRONG)
 
@@ -313,7 +313,7 @@ Python 3 isn't just a better version of Python 2 – it is a completely differen
 | **MicroPython** | Python implementation     | Python for microcontrollers/constrained devices        |
 | **Cython**      | Language/compiler project | Python-like code compiled to C/C++                     |
 
-## 1.3. Section 3 - Downloading and Installing Python
+# 1.3. Section 3 - Downloading and Installing Python
 
 https://www.python.org/downloads/
 
@@ -363,7 +363,7 @@ IDLE → CPython → Your program
 Both VS Code and IDLE can provide an environment for writing and running Python, but they're different tools. VS Code and IDLE are development tools/editors. CPython is the Python implementation that actually provides the machinery for running Python code.
 
 
-## 1.4. Module 1 Completion Module Test
+# 1.4. Module 1 Completion Module Test
 
-First attempt: 70%
-Second attempt: 80%
+## First attempt: 70%
+## Second attempt: 80%
