@@ -42,9 +42,9 @@ Computers don't inherently understand what they're doing, but they can calculate
 
 The important distinction is “understand” vs. “execute.” Another name for a programming language is executable 
 
-Perspective a. A program is a set of instructions that the computer executes (carries out).
+**Perspective A.** A program is a set of instructions that the computer executes (carries out).
   
-Perspective b. Programs contain instructions that a computer executes to perform tasks and produce outputs.
+**Perspective B.** Programs contain instructions that a computer executes to perform tasks and produce outputs.
 
 Program: “Computer, display Hello.”
 Computer: executes that instruction → Hello
