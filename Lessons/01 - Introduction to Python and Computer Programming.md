@@ -353,7 +353,7 @@ print(name)
 print(age)
 ```
 
-🧠 My honest perception: lets say I download VS Code and then open a .py file, where is IDLE in that process?
+🧠 My honest perception: lets say I download VS-Code and then open a .py file, where is IDLE in that process?
 
 *ChatGPT's Clarification: IDLE isn't automatically involved at all if you're using VS Code.*
 
