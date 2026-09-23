@@ -218,8 +218,8 @@ Simple way to remember
 **Compilation:** Translate first → execute afterward.
 **Interpretation:** Process/execute through the interpreter as the program runs.
 
-## 1.2. Section 2 Introduction to Python
-# 1.2.1 Python – a tool, not a reptile
+# 1.2. Section 2 Introduction to Python
+## 1.2.1 Python – a tool, not a reptile
 
 Python is a widely-used, interpreted(Ties in 1.1.5-1.1.7), object-oriented, and high-level programming language with dynamic semantics, used for general-purpose programming.
 
