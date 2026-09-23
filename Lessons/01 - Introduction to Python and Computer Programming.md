@@ -1,4 +1,4 @@
-**Expectations**
+## Expectations
 
 At this point, I've already begun the modules and have made it to the middle of Module 2. However, I can still reflect on what I expected when starting Module 1.
 
