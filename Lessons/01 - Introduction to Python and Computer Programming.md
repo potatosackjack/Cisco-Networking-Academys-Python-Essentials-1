@@ -57,7 +57,7 @@ A complete set of known commands is called an **instruction list**, sometimes ab
 
 
 ## 1.1.3 What makes a language?
-The four elements that make up a language 
+The four elements that make up a language
 
 1. Alphabet
 
