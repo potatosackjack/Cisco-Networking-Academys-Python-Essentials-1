@@ -573,4 +573,49 @@ Programming***Essentials***in...Python
 
 A literal is a value that you type directly into your code.
 
-🧠 My honest perception: I don't know why I get stuck up on such basic concepts. 
+🧠 My honest perception: I don't know why I get stuck on such basic concepts. The terms used in programming are often
+straightforward, but sometimes I get confused when concepts work together, overlap, or share similar
+buzzwords in their definitions. To better understand what a **literal** is, I had to open up ChatGPT—no surprise!—and clarify the concept. Originally, I thought a literal was basically the same thing as a parameter. After several
+examples from ChatGPT, including asking for an explanation using a math analogy, I started to get
+the idea. My current understanding is that a **function** is a block of code that can take in a value, a
+**parameter** is a variable defined within a function, and a **literal** is the actual value itself.
+
+ChatGPT's Clarification: Yes — it's mostly accurate, and it's a good reflection of what you currently understand. There's just one small technical adjustment I'd make.
+
+Your statement:
+
+"a parameter is a variable defined within a function"
+
+is understandable, but more precisely:
+
+A parameter is a variable in a function's definition that receives a value when the function is called.
+
+So I'd make your final sentence:
+
+My current understanding is that a **function** is a block of code that can take in a value, a
+**parameter** is a variable in a function's definition that receives a value when the function is
+called, and a **literal** is a value written directly in the code.
+
+That last part is important because "actual value itself" can be a little misleading.
+
+For example:
+
+```
+greet ("Potatosackjack")
+```
+
+"Potatosackjack" is a literal because it's written directly into the code.
+
+It's also an argument because you're passing it to greet().
+
+So you can have:
+
+**Literal** → describes what the value is/how it's written
+**Argument** → describes the value's role when passed to a function
+**Parameter** → the variable in the function definition that receives that value.
+
+That's a really useful distinction to have in your Module 2 notes.
+
+## 2.2.1 Integers
+
+
