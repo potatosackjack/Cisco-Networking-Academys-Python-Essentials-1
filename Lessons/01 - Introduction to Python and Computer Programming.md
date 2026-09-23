@@ -149,7 +149,7 @@ For example if you try to use a function that does exist in a high level languag
 
 *ChatGPT's Clarification:An interpreter can identify and report errors in a program, often indicating where the error occurred and providing information about what went wrong. However, its error messages can sometimes be misleading because the interpreter cannot know the programmer's intentions. It can identify the problem it encounters, but it may not be able to identify the underlying mistake that caused it.*
 
-In confusion I asked ChatGPT if the built-in interpreter is the red highlights for errors in side the code editor?
+In confusion I asked ChatGPT if the built-in interpreter is the red highlights for errors inside the code editor?
 
 *ChatGPT's Clarification: The red highlights you see in a code editor are usually produced by the editor's syntax checker, linter, or language-analysis tools. They're not necessarily the Python interpreter itself.*
 
