@@ -42,6 +42,7 @@ this first program consists of:
 Each element carrying an important role
 
 **2.1.2 The print() function**
+
 Print in the line of text below is a function 
 ```
 print("Hello World!")
