@@ -296,7 +296,7 @@ Python is also commonly used behind mobile apps—for example, a mobile app migh
 
 Simple takeaway: Python is a very high-level, general-purpose language. That makes it excellent when you want to accomplish things without dealing with lots of low-level details—but those same abstractions can make it less suitable when you need maximum hardware control, native integration, or performance.
 
-## 1.2.8 There is more than one Python**
+## 1.2.8 There is more than one Python
 There are two main kinds of Python, called Python 2 and Python 3.
 Python 2 is an older version of the original Python.
 These two versions of Python aren't compatible with each other.
