@@ -660,4 +660,12 @@ The important thing is that octal and hexadecimal are ways of writing integer va
 
 ## 2.2.3 Floats
 
+**Float (float)** — A number that can contain a decimal or fractional part.
+-Examples: 3.14, 2.5, -0.75
+
+Ensure that your number doesn't contain any commas at all.Python sees the comma as something that separates two pieces of information (For example separating two arguments).
+
+Python lets you leave out a zero when that zero doesn't change the value of the number.
+
+
 
