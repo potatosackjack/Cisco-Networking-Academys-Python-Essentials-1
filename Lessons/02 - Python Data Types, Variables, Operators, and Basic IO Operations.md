@@ -635,19 +635,19 @@ And one important detail: a float doesn't have to have a fractional value that i
 
 Both of these kinds of numbers differ significantly in how they're stored in a computer memory and in the range of acceptable values.
 
-Python doesn't allow the interjection  of any characters that are not digits inside to a number.
+Python doesn't allow the interjection  of any characters that are not digits inside a number.
 
 **Prohibited**: ```11,111,111```, or like this: ```11.111.111```, or even like this: ```11 111 111```.
 
 It's clear that this provision makes it easier to read, especially when the number consists of many digits. However, Python doesn't accept things like these. It's prohibited. What Python does allow, though, is the use of underscores in numeric literals.*
 
-Therefore, you can write this number either like this: ```11111111```, or like this: ```11_111_111```.
+Therefore, you can write this number either like this: ```11111111```, like: ```11_111_111```.
 
 Note **Python 3.6** has introduced underscores in numeric literals, allowing for the placement of single underscores between digits and after base specifiers for improved readability. This feature is not available in older versions of Python.
 
-And how do we code negative numbers in Python? As usual ‒ by adding a minus. You can write: ```-11111111```, or ```-11_111_111```.
+**Negative numbers** in Python? You can write: ```-11111111```, or ```-11_111_111```.
 
-Positive numbers do not need to be preceded by the plus sign, but it's permissible, if you wish to do it. The following lines describe the same number: ```+11111111``` and ```11111111```.
+Positive numbers are allowed to be preceded by a plus sign. Same number: ```+11111111``` and ```11111111```.
 
 Python allows integers to be written as decimal, binary, octal, or hexadecimal numbers.
 
@@ -659,3 +659,5 @@ Python allows integers to be written as decimal, binary, octal, or hexadecimal n
 The important thing is that octal and hexadecimal are ways of writing integer values. They don't represent a different type of number in Python.
 
 ## 2.2.3 Floats
+
+
