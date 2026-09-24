@@ -651,10 +651,10 @@ Positive numbers are allowed to be preceded by a plus sign. Same number: ```+111
 
 Python allows integers to be written as decimal, binary, octal, or hexadecimal numbers.
 
-**Decimal** — base 10 → 25
-**Binary** — base 2 → 0b11001
-**Octal** — base 8 → 0o31
-**Hexadecimal** — base 16 → 0x19
+**Decimal** — base 10 → 25  
+**Binary** — base 2 → 0b11001  
+**Octal** — base 8 → 0o31  
+**Hexadecimal** — base 16 → 0x19  
 
 The important thing is that octal and hexadecimal are ways of writing integer values. They don't represent a different type of number in Python.
 
@@ -667,5 +667,105 @@ Ensure that your number doesn't contain any commas at all.Python sees the comma 
 
 Python lets you leave out a zero when that zero doesn't change the value of the number.
 
+The decimal point is essential for recognizing floating-point numbers in Python.
+
+Look at these two numbers:
+
+```
+6
+6.0
+```
+
+You may think that they are exactly the same, but Python sees them in a completely different way.
+
+```6``` is an integer number, whereas ```6.0``` is a floating-point number.
+
+**Scientific notation** is a way of writing very large or very small numbers in a shorter form. In Python, ```e``` is used to represent the power of 10.
+
+Straightforward Python examples showing large, small, and negative numbers in scientific notation.
+
+1. Large number
+
+Input: 
+
+```
+number = 250000000
+print(f"{number:e}")
+```
+
+Output:
+
+```
+2.500000e+08
+```
+
+That's Python's scientific notation for **250,000,000**.
+
+2. Small number
+
+Input: 
+
+```
+number = 0.0000025
+print(f"{number:e}")
+```
+
+Output:
+
+```
+2.500000e-06
+```
+
+That's **0.0000025**.
+The ```-06``` means the decimal point needs to move **6 places to the left**.
+
+3. Negative number
+
+```
+number = -250000000
+print(f"{number:e}")
+```
+
+Output:
+
+```
+-2.500000e+08
+```
+The **negative** sign tells you the number itself is negative.
+Notice that the ```+08``` is separate—it describes the size of the number, not whether the number is positive or negative.
+
+Python always chooses the more economical form of the number's presentation, and you should take this into consideration when creating literals.
+
+## 2.2.4 Strings
+A string is a sequence of characters enclosed in quotation marks.
+
+```python
+"Hello"
+"Python"
+"123"
+```
+
+Even `"123"` is a string because the quotation marks tell Python to treat the characters as **text**, rather than as the number 123.
+
+**Simple way to remember**
+
+**String** = text made up of characters.
+
+Examples of characters include letters, numbers, spaces, and symbols:
+
+```python
+"Hello, world!"
+"Python 3"
+"$100"
+```
+In Python, an apostrophe (') and a quotation mark (") can both be used to create a string.
+
+🔑 Remember the opening quotation or apostrophe is the beginning of the string and the closing quotation or apostrophe is the end of the string, however if you wanted to use quotation or apostrophe with in the string you would have to add a backslash in front of them to so Python isn't confused and prematurely wraps the string.
+
+Example: 
+
+```
+print('I\'m Monty Python.')
+```
 
 
