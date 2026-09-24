@@ -765,7 +765,37 @@ In Python, an apostrophe (') and a quotation mark (") can both be used to create
 Example: 
 
 ```
-print('I\'m Monty Python.')
+"It's okay"       # ✅
+'It\'s okay'      # ✅
+
+'He said "Hi"'    # ✅
+"He said \"Hi\""  # ✅
 ```
+The quotes wrapping the string tell Python where the string starts and ends. If you use the same quote inside the string, Python may think you've ended the string.
+
+## 2.2.5 Boolean values
+The name comes from George Boole (1815-1864), the author of the fundamental work, The Laws of Thought, which contains the definition of Boolean algebra ‒ a part of algebra which makes use of only two distinct values: ```True``` and ```False```, denoted as ```1``` and ```0```.
+
+computers know only two kinds of answers:
+
+- Yes, this is true  
+- No, this is false
+
+These two Boolean values have strict denotations in Python. You cannot change anything ‒ you have to take these symbols as they are, including case-sensitivity.
+
+```
+True
+False 
+```
+
+In Python, True and False can be compared because they have numerical values of 1 and 0. True is greater than False.
+
+```True = 1``` → ```True > False``` → ```1 > 0``` → ```Is True greater than False``` → ```True```
+```False = 0``` → ```True < False``` → ```1 < 0``` → ```Is True less than False```  → ```False```
+
+
+
+
+ 
 
 
