@@ -853,8 +853,76 @@ You can use the basic mathematical operators:
 | %      | Remainder (modulo)                |
 | **     | Exponentiation                    |
 
+**Addition Operator** 
+In Python, the addition operator is ```+```. It tells Python to add two values together.
 
+| Expression | Meaning | Result |
+|---|---|---|
+| `10 + 5` | Add numbers | `15` |
+| `"Hello" + "World"` | Join strings | `"HelloWorld"` |
 
+```+``` means add when you're working with numbers and join when you're working with strings.
+
+**Subtraction Operator**
+The subtraction operator in Python is the minus sign ```-```. It is used to subtract one value from another.
+
+You cannot subtract strings, I'll produce a TypeError.
+
+**Multiplication Operator**
+The multiplication operator in Python is ```*```. It has a few different uses depending on what you're multiplying.
+
+| Expression | What `*` does |
+|---|---|
+| `5 * 3` | Multiplies numbers |
+| `2.5 * 4` | Multiplies decimals |
+| `"Hi" * 3` | Repeats a string |
+| `[1, 2] * 3` | Repeats a list |
+
+**Division Operator**
+The division operator in Python is ```/```. The / operator performs division and returns a floating-point number.
+Even when the answer is a whole number, / normally gives you a float.
+
+Example: 10 / 2 → 5.0
+
+Just like the other arithmetic operators, you can divide variables:
+
+```
+total = 20
+people = 4
+
+print(total / people)
+```
+
+**Floor Division Operator** divides two numbers and rounds the result down to the next lowest whole integer (towards negative infinity).
+
+- Positive results: ```7 / 3``` is ```2.333``..., which floors down to ```2```.
+- Negative results: ```-7 / 3``` is ```-2.333```..., which floors down to ```-3``` (not -2).
+
+**Remainder (modulo) Operator**
+The modulo operator ```%``` tells you what is left over after division. 
+
+Example: 
+
+```
+10 % 3
+```
+
+10 divided by 3 = 3, with 1 left over.
+
+So:
+
+```
+10 % 3 = 1
+```
+
+So ```%``` → What's left over?
+
+**Exponentiation Operator**
+The exponentiation operator ```**``` is used to raise a number to a power.
+
+```**``` → multiply a number by itself a certain number of times
+
+## 2.3.3 Operators and their priorities
 
 
 
