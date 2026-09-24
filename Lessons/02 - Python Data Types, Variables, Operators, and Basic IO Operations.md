@@ -813,7 +813,7 @@ Python → the actual text
 ```
 Their big advantage is that they can contain multiple lines. Python treats everything between the opening ```"""``` and closing ```"""``` as one string.
 
-**2.2.7 SECTION SUMMARY**
+## 2.2.7 SECTION SUMMARY
 
 1. **Literals** are notations for representing some fixed values in code. Python has various types of literals - for example, a literal can be a number (numeric literals, e.g., ```123```), or a string (string literals, e.g., "I am a literal.").
 
@@ -834,7 +834,27 @@ Octal and hexadecimal numeration systems, similarly, employ *8* and *16* as thei
 
 There is one more, special literal that is used in Python: the ```None``` literal. This literal is a ```NoneType``` object, and it is used to represent the **absence of a value**. We'll tell you more about it soon.
 
+# 2.3 Section 3 – Operators - data manipulation tools
+## 2.3.1 Python as a calculator
+Python to perform mathematical calculations just like you would with a calculator.
 
- 
+## 2.3.2 Basic operators
+
+You can use the basic mathematical operators:
+
+
+Symbol | operation|
+--- | ---|
++ | Addition |
+- | Subtraction |
+* | Multiplication |
+/ | Division |
+// | Integer division (floor division) |
+% | Remainder (modulo) |
+** | Exponentiation |
+
+
+
+
 
 
