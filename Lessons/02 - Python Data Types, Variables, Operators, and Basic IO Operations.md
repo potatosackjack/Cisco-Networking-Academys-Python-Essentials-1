@@ -923,7 +923,7 @@ The exponentiation operator ```**``` is used to raise a number to a power.
 ```**``` → multiply a number by itself a certain number of times
 
 ## 2.3.3 Operators and their priorities
+The phenomenon that causes some operators to act before others is known as the **hierarchy of priorities**.
 
-
-
+🧠Growing up, I learned the concept of PEMDAS to help with the order of operations. While I was always pretty decent at solving math problems, I just noticed a hiccup that probably played a big part in me finding certain equations difficult to solve. I was taught that you follow the order of PEMDAS from left to right. After doing some research during this study, I'm just now learning that Parentheses → Exponents → Multiplication/Division → Addition/Subtraction is the correct way to read it. The part I misunderstood was Multiplication/Division and Addition/Subtraction. Multiplication and division are performed left to right, and then addition and subtraction are also performed left to right. I always thought you followed the individual letters of PEMDAS in order, rather than treating multiplication and division, and addition and subtraction, as equal-priority operations. 
 
