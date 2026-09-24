@@ -843,15 +843,16 @@ Python to perform mathematical calculations just like you would with a calculato
 You can use the basic mathematical operators:
 
 
-Symbol | operation|
---- | ---|
-+ | Addition |
-- | Subtraction |
-* | Multiplication |
-/ | Division |
-// | Integer division (floor division) |
-% | Remainder (modulo) |
-** | Exponentiation |
+| Symbol | operation                         |
+|--------|-----------------------------------|
+| +      | Addition                          |
+| -      | Subtraction                       |
+| *      | Multiplication                    |
+| /      | Division                          |
+| //     | Integer division (floor division) |
+| %      | Remainder (modulo)                |
+| **     | Exponentiation                    |
+
 
 
 
