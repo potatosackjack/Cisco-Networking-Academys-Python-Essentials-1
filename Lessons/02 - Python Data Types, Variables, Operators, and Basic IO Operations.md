@@ -790,8 +790,9 @@ False
 
 In Python, True and False can be compared because they have numerical values of 1 and 0. True is greater than False.
 
-```True = 1``` → ```True > False``` → ```1 > 0``` → ```Is True greater than False``` → ```True```
-```False = 0``` → ```True < False``` → ```1 < 0``` → ```Is True less than False```  → ```False```
+```True = 1``` → ```True > False``` → ```1 > 0``` → ```Is True greater than False?``` → ```True```  
+
+```False = 0``` → ```True < False``` → ```1 < 0``` → ```Is True less than False?```  → ```False```
 
 
 
