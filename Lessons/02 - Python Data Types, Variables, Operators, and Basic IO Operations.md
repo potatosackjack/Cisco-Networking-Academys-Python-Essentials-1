@@ -1174,4 +1174,5 @@ If you actually need it as a number, you can convert it:
 age = int(input("How old are you? "))
 ```
 
+## 2.6.2 The input() function with an argument
 
