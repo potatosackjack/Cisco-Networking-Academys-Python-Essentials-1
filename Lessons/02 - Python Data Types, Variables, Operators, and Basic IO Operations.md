@@ -1111,3 +1111,67 @@ Output:
 ```
 
 ## 2.4.4 How to use a variable
+Create it → name it → use the name to access its value.
+
+```
+name = "John"   # create
+print(name)     # use
+```
+## 2.4.5 How to assign a new value to an already existing variable
+
+You can change the value of a variable by using the = sign again. Assignment creates or changes the value associated with a variable. So reassignment isn't necessarily "permanent"—you can always assign another value—but the variable itself only remembers its current value unless you stored the old value somewhere else.
+
+Example:
+
+```
+age = 25
+old_age = age
+
+age = 26
+
+print(age)      # 26
+print(old_age)  # 25
+```
+## 2.4.8 Shortcut operators
+
+| Shortcut  | Same as      | Meaning          |
+| --------- | ------------ | ---------------- |
+| `x += 5`  | `x = x + 5`  | Add 5            |
+| `x -= 5`  | `x = x - 5`  | Subtract 5       |
+| `x *= 5`  | `x = x * 5`  | Multiply by 5    |
+| `x /= 5`  | `x = x / 5`  | Divide by 5      |
+| `x %= 5`  | `x = x % 5`  | Get remainder    |
+| `x **= 5` | `x = x ** 5` | Raise to a power |
+
+# 2.5 Comments
+
+A remark inserted into the program, which is **omitted at runtime**, is called a **comment**.
+In Python, a comment is a piece of text that begins with a ```#``` (hash) sign and extends to the end of the line.
+
+# 2.6 Interaction with the user
+## 2.6.1 The input() function
+
+The ```input()``` function allows your program to ask the user for information and receive their response.
+
+```input()``` = **Input → Program receives information**.
+
+One important thing, the ```input()``` returns the user's response as a string, even if they type a number.
+
+For example:
+
+```
+age = input("How old are you? ")
+```
+
+If you enter 25, Python treats it as:
+
+
+```"25"``` not: ```25```
+
+If you actually need it as a number, you can convert it:
+
+```
+age = int(input("How old are you? "))
+```
+
+
