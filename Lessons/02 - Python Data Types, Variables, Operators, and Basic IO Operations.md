@@ -925,5 +925,107 @@ The exponentiation operator ```**``` is used to raise a number to a power.
 ## 2.3.3 Operators and their priorities
 The phenomenon that causes some operators to act before others is known as the **hierarchy of priorities**.
 
-🧠Growing up, I learned the concept of PEMDAS to help with the order of operations. While I was always pretty decent at solving math problems, I just noticed a hiccup that probably played a big part in me finding certain equations difficult to solve. I was taught that you follow the order of PEMDAS from left to right. After doing some research during this study, I'm just now learning that Parentheses → Exponents → Multiplication/Division → Addition/Subtraction is the correct way to read it. The part I misunderstood was Multiplication/Division and Addition/Subtraction. Multiplication and division are performed left to right, and then addition and subtraction are also performed left to right. I always thought you followed the individual letters of PEMDAS in order, rather than treating multiplication and division, and addition and subtraction, as equal-priority operations. 
+🧠 Growing up, I learned the concept of PEMDAS to help with the order of operations. While I was always pretty decent at solving math problems, I just noticed a hiccup that probably played a big part in me finding certain equations difficult to solve. I was taught that you follow the order of PEMDAS from left to right. After doing some research during this study, I'm just now learning that **Parentheses → Exponents → Multiplication/Division → Addition/Subtraction** is the correct way to read it. The part I misunderstood was Multiplication/Division and Addition/Subtraction. Multiplication and division are performed left to right, and then addition and subtraction are also performed left to right. I always thought you followed the individual letters of PEMDAS in order, rather than treating multiplication and division, and addition and subtraction, as equal-priority operations. 
+
+This is where **binding direction** becomes important. It helps explain why some operators are evaluated **left to right** while others are evaluated **right to left**.
+
+**What does “binding” mean?**
+
+Think of **binding** as an operator's tendency to "grab onto" the value next to it.
+
+There are two important directions:
+
+- **Left-to-right binding** → the operator works with the value to its **left first**, then continues toward the right.
+
+- **Right-to-left binding** → the operator works with the value to its **right first**, then continues toward the left.
+
+For example, addition is evaluated left to right:
+
+```
+10 - 3 - 2
+```
+
+Python reads this as:
+
+```
+(10 - 3) - 2
+```
+
+So:
+
+```
+7 - 2 = 5
+```
+
+It does **not** read it as:
+
+```
+10 - (3 - 2)
+```
+
+**But some operators go right to left**
+
+Exponentiation is an important example:
+
+2 ** 3 ** 2
+
+Python evaluates this as:
+
+```
+2 ** (3 ** 2)
+```
+
+First:
+
+```
+3 ** 2 = 9
+```
+
+Then:
+
+```
+2 ** 9 = 512
+``` 
+
+So the answer is **512**, not 64.
+
+**Why does this matter?**
+
+This is one reason the **order of operations** isn't simply a matter of memorizing PEMDAS.
+
+There are actually **two different** ideas involved:
+
+**Precedence** tells you **which type of operator gets handled first**.
+
+**Associativity** tells you **which direction operators of the same precedence are evaluated**.
+
+So you can think of it like this:
+
+**Precedence** = Which operator goes first?
+**Associativity** = Which direction do we go when operators have the same precedence?
+
+For your Module 2.3 notes, I'd actually use “**associativity**” rather than “binding” when you're talking specifically about **left-to-right vs. right-to-left**. That's the more precise programming term.
+
+Python operator precedence table, from highest priority to lowest priority.
+
+| Priority | Operator(s)                                                      | Description                                      | Associativity |
+| -------: | ---------------------------------------------------------------- | ------------------------------------------------ | ------------- |
+|        1 | `()`                                                             | Parentheses                                      | —             |
+|        2 | `**`                                                             | Exponentiation                                   | Right to left |
+|        3 | `+x`, `-x`, `~x`                                                 | Unary plus, unary minus, bitwise NOT             | Right to left |
+|        4 | `*`, `/`, `//`, `%`                                              | Multiplication, division, floor division, modulo | Left to right |
+|        5 | `+`, `-`                                                         | Addition, subtraction                            | Left to right |
+|        6 | `<<`, `>>`                                                       | Bitwise shifts                                   | Left to right |
+|        7 | `&`                                                              | Bitwise AND                                      | Left to right |
+|        8 | `^`                                                              | Bitwise XOR                                      | Left to right |
+|        9 | `\|`                                                             | Bitwise OR                                       | Left to right |
+|       10 | `in`, `not in`, `is`, `is not`, `<`, `<=`, `>`, `>=`, `==`, `!=` | Comparisons, membership, identity                | Left to right |
+|       11 | `not`                                                            | Logical NOT                                      | Right to left |
+|       12 | `and`                                                            | Logical AND                                      | Left to right |
+|       13 | `or`                                                             | Logical OR                                       | Left to right |
+|       14 | `if ... else`                                                    | Conditional expression                           | Right to left |
+|       15 | `:=`                                                             | Assignment expression                            | Right to left |
+
+
+
 
