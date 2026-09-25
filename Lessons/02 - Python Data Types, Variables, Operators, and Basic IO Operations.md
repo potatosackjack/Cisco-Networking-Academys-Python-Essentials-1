@@ -1069,5 +1069,45 @@ Variables do not appear in a program automatically. As a developer, you must dec
 
 ## 2.4.2 Variable names
 
+If you want to give a name to a variable, you must follow some strict rules:
 
+- the name of the variable must be composed of upper-case or lower-case letters, digits, and the character _ (underscore)
 
+- the name of the variable must begin with a letter
+
+- the underscore character is a letter
+
+- upper and lower case letters are treated as different (a little differently than in the real world – Alice and ALICE are the same first names, but in Python they are two different variable names, and consequently, two different variables);
+
+-the name of the variable must not be any of Python's reserved words
+
+Python lets you use not only Latin letters but also characters specific to languages that use other alphabets.
+
+Take a look at the list of words that play a very special role in every Python program.
+
+```['False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']```
+
+They are called keywords or (more precisely) reserved keywords. They are reserved because you mustn't use them as names: neither for your variables, nor functions, nor any other named entities you want to create.
+
+The meaning of the reserved word is predefined, and mustn't be changed in any way.
+
+## 2.4.3 How to create a variable
+
+**Variable** = a name that refers to a value.
+
+Example: 
+
+Input:
+
+```
+var = 1
+print(var)
+```
+
+Output:
+
+```
+1
+```
+
+## 2.4.4 How to use a variable
