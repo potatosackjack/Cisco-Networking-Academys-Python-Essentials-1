@@ -1006,7 +1006,7 @@ So you can think of it like this:
 
 For your Module 2.3 notes, I'd actually use “**associativity**” rather than “binding” when you're talking specifically about **left-to-right vs. right-to-left**. That's the more precise programming term.
 
-Python operator precedence table, from highest priority to lowest priority.
+Python operator from highest priority to lowest priority (PEMDAS).
 
 ```
 Parentheses
@@ -1019,6 +1019,8 @@ Unary + / -
       ↓
 + -
 ```
+
+Python operator precedence table, from highest priority to lowest priority.
 
 | Priority | Operator(s)                                                      | Description                                      | Associativity |
 | -------: | ---------------------------------------------------------------- | ------------------------------------------------ | ------------- |
