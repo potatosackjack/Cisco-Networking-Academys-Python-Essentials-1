@@ -1065,6 +1065,9 @@ and finally, the lowest priority: binary + and -.
 
 # 2.4 - Variables
 ## 2.4.1 Variables – data-shaped boxes
+Variables do not appear in a program automatically. As a developer, you must decide how many and which variables to use in your programs.
+
+## 2.4.2 Variable names
 
 
 
