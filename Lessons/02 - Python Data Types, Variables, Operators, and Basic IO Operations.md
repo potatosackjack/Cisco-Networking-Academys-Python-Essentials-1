@@ -1008,6 +1008,18 @@ For your Module 2.3 notes, I'd actually use “**associativity**” rather than 
 
 Python operator precedence table, from highest priority to lowest priority.
 
+```
+Parentheses
+      ↓
+Exponentiation
+      ↓
+Unary + / -
+      ↓
+* / // %
+      ↓
++ -
+```
+
 | Priority | Operator(s)                                                      | Description                                      | Associativity |
 | -------: | ---------------------------------------------------------------- | ------------------------------------------------ | ------------- |
 |        1 | `()`                                                             | Parentheses                                      | —             |
