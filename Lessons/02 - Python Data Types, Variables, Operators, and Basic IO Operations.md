@@ -895,8 +895,10 @@ print(total / people)
 
 **Floor Division Operator** divides two numbers and rounds the result down to the next lowest whole integer (towards negative infinity).
 
-- Positive results: ```7 / 3``` is ```2.333``..., which floors down to ```2```.
-- Negative results: ```-7 / 3``` is ```-2.333```..., which floors down to ```-3``` (not -2).
+- Positive results: ```7 // 3``` is ```2.333``..., which floors down to ```2```.
+- Negative results: ```-7 // 3``` is ```-2.333```..., which floors down to ```-3``` (not -2).
+
+Double slash tells Python to give only the whole number part and drop the decimal part, so 1 double slash 2 becomes 0. If you want 0.5, use a single slash so Python does floating point division.
 
 **Remainder (modulo) Operator**
 The modulo operator ```%``` tells you what is left over after division. 
@@ -916,6 +918,8 @@ So:
 ```
 
 So ```%``` → What's left over?
+
+
 
 **Exponentiation Operator**
 The exponentiation operator ```**``` is used to raise a number to a power.
@@ -1219,9 +1223,48 @@ Type casting means converting a value from one data type to another.
 
 ## 2.6.7 String operators
 
+**String operators** are operators that let you work with strings (text).
 
+1. + — Concatenation
+   + 
+The + operator can join strings together.
+ 
+```
+first = "Hello"
+second = "World"
 
+print(first + second)
+```
+    
+2. * — Repetition
 
+The * operator can repeat a string.
+
+Input: 
+
+```
+print("Hello " * 3)
+```
+Output: 
+
+```
+Hello Hello Hello
+```
+
+The number tells Python how many times to repeat the string.
+
+**Easy way to remember**
+
+```+``` → joins strings
+```*``` → repeats strings
+
+**2.6.8 Type conversions once again**
+
+str() = turn something into a string (text).
+
+```str(number)```
+
+Takes the value in number and turn it into text
 
 
 
