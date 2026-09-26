@@ -1175,4 +1175,53 @@ age = int(input("How old are you? "))
 ```
 
 ## 2.6.2 The input() function with an argument
+The argument is called a prompt because it tells the user what information to enter.
+
+Example: 
+
+```
+input("What is your name? ")
+```
+
+input() → the function
+"What is your name? " → the argument
+name → the variable that stores the user's response
+
+## 2.6.3 The result of the input() function
+
+The result of the input() function is a string.
+
+This means that you mustn't use it as an argument of any arithmetic operation, e.g., you can't use this data to square it, divide it by anything, or divide anything by it.
+
+## 2.6.4 The input() function – prohibited operations
+
+Input() gives you text. If you want to perform mathematical operations on that input, you need to convert it to a number first.
+
+**Common type conversions**
+- String → Integer 
+- String → Float
+- Integer → String
+- Integer → Float
+
+## 2.6.6 More about input() and type casting
+
+
+input() always gives you a string. input() gives you text. If you want to perform mathematical operations on that input, you need to convert it to a number first.
+
+```
+input()       → string
+int(input())  → integer
+float(input()) → float
+```
+## 2.6.5-6 Type casting (type conversions)
+
+Type casting means converting a value from one data type to another.
+
+## 2.6.7 String operators
+
+
+
+
+
+
 
