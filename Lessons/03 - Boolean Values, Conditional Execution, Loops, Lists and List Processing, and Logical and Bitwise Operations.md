@@ -43,4 +43,99 @@ I'm expecting this module to challenge me, but I'm still in it and looking forwa
 **Bitwise Operations:** Work directly with the binary representation of integers.
 Common bitwise operators include `&` (**AND**), `|` (**OR**), `^` (**XOR**), `~` (**NOT**), `<<` (**left shift**), and `>>` (**right shift**).
 
+*Google Gemini*
+
 ## 3.1.1 Questions and answers
+
+Computers ultimately operate using binary information. Computers can absolutely do much more than this now, 
+especially with AI but Ttaditional programs make decisions by evaluating conditions and reacting to the result
+
+Program asks a question
+        ↓
+Computer evaluates it
+        ↓
+True or False
+        ↓
+Program reacts
+
+## 3.1.2 Comparison: equality operator
+
+The **equality operator** ```==``` compares two values to see if they are equal.
+It is a binary operator with left-sided binding. It needs two arguments and checks if they are equal.
+
+It produces a **Boolean value**:
+
+**True** → the values are equal.
+**False** → the values are not equal.
+
+The equality operator ```==``` isn't to be confused with the equal operator ```=```.
+
+```=``` assigns a value.
+```==``` asks whether two values are equal.
+
+## 3.1.3 Exercises
+
+```2 == 2``` is ```True```.
+
+2 is equal to 2. Python will answer True.
+
+```2 == 2.``` is ```True```.
+
+Python is able to convert the integer value into its real equivalent, and consequently, the answer is True.
+
+```1 == 2``` is ```False```.
+
+The answer will be (or rather, always is) False.
+
+## 3.1.4 Operators
+
+**Equality: the equal to operator (==)**
+
+The ```==``` (equal to) operator compares the values of two operands. If they are equal, the result of the comparison is ```True```. If they are not equal, the result of the comparison is ```False```.
+
+**Inequality: the not equal to operator (!=)**
+
+The ```!=``` (not equal to) operator compares the values of two operands, too. Here is the difference: if they are equal, the result of the comparison is ```False```. If they are not equal, the result of the comparison is ```True```.
+
+🧠 My perspective: I really don't get the point of the inequality operator. I know it has importance and will probably will
+show itself to be really useful in the future but as of right now it has be questioning why ever concept in code is black and white.
+
+**Comparison operators: greater than**
+
+```>``` (greater than) operator. 
+
+The greater than operator ```>``` compares two values to determine whether the value on the left is greater than the value on the right.
+
+It returns a **Boolean value**: It returns a **Boolean value**: It returns either ```True``` or ```False```.
+
+**Comparison operators: greater than or equal to**
+
+```>=``` (greater than or equal to).
+
+The >= operator checks whether the value on the left is greater than OR equal to the value on the right.
+
+It returns a **Boolean value**: It returns a **Boolean value**: It returns either ```True``` or ```False```.
+
+**Comparison operators: less than**
+
+```<``` (less than) operator.
+
+The ```<``` operator checks whether the value on the **left is smaller than** the value on the right.
+
+It returns a **Boolean value**: It returns a **Boolean value**: It returns either ```True``` or ```False```.
+
+**Comparison operators: less than or equal to**
+
+```<=``` (less than or equal to).
+
+The ```<=``` operator checks whether the value on the left is **less than OR equal** to the value on the right.
+
+It returns a **Boolean value**: It returns either ```True``` or ```False```.
+
+## 3.1.5 Making use of the answers
+
+
+
+
+
+
