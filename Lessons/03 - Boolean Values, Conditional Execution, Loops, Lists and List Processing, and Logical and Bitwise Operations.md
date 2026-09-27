@@ -150,6 +150,20 @@ It returns a **Boolean value**: It returns either ```True``` or ```False```.
 
 ## 3.1.7 Making use of the answers
 
+```if```, ```if-else```, and ```elif``` Statements
+These are all ways to make Python make decisions based on conditions.
+
+Once Python finds a true condition, it executes that block and doesn't continue checking the remaining elif/else blocks.
+
+```
+if       → check the first condition
+elif     → check another condition
+else     → if none of the conditions were true
+```
+
+**IF → ELSE IF → OTHERWISE**
+
+## 3.1.8 Analyzing code samples
 
 
 
