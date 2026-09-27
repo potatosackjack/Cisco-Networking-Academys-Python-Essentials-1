@@ -1266,5 +1266,8 @@ str() = turn something into a string (text).
 
 Takes the value in number and turn it into text
 
+# 2.7 Module 2 Completion Module Test
+
+## First attempt: 95%
 
 
