@@ -163,7 +163,11 @@ else     → if none of the conditions were true
 
 **IF → ELSE IF → OTHERWISE**
 
-## 3.1.8 Analyzing code samples
+## 3.1.8-13 Analyzing code samples
+
+# 3.1.4 Loops in Python
+
+
 
 
 
