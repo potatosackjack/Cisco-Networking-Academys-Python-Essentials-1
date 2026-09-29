@@ -165,7 +165,45 @@ else     → if none of the conditions were true
 
 ## 3.1.8-13 Analyzing code samples
 
-# 3.1.4 Loops in Python
+# 3.2.0 Loops in Python
+## 3.2.1 Looping your code with while
+
+A ```while``` loop repeatedly executes instructions as long as a condition is true
+
+The ```while``` structure basically says: 
+
+```
+WHILE this is true:
+    DO this
+    DO this
+    DO this
+    check again
+```
+
+A while loop generally follows this cycle:
+
+```
+Check condition
+      ↓
+   True?
+   ↙    ↘
+ Yes     No
+  ↓       ↓
+Run      Stop
+code
+  ↓
+Update variable
+  ↓
+Check condition again
+```
+
+The condition is checked before every iteration, ```while``` loops are sometimes described as condition-controlled loops.
+The loop continues while the condition is ```True``` and stops when the condition becomes ```False```.
+
+## 3.2.2 An infinite loop
+
+
+
 
 
 
