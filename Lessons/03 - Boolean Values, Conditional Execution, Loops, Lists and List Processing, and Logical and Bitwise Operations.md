@@ -198,6 +198,8 @@ Check condition again
 The condition is checked before every iteration, ```while``` loops are sometimes described as condition-controlled loops.
 The loop continues while the condition is ```True``` and stops when the condition becomes ```False```.
 
+
+
 ## 3.2.2 An infinite loop
 
 An infinite loop, also called an ```endless loop```, is a loop that never reaches a ```False``` condition.
@@ -209,6 +211,32 @@ A while infinite loop generally follows this cycle:
 Check → True → Run → Check → True → Run → Check → True → ...
 ```
 
+Generally something inside the loop needs to make progress toward the stopping condition..
+
+## 3.2.3 The while loop: more examples
+
+Example:
+
+```
+count = 1
+
+while count <= 5:
+    print(count)
+    count += 1
+```
+
+Here's what happens:
+
+1. ```count``` starts at ```1```.
+2. Python **checks the condition**: count ```<= 5```.
+3. Since it is ```True```, Python runs the loop body.
+4. ```count``` increases by ```1```.
+5. Python checks the condition again.
+6. This continues until ```count <= 5``` becomes ```False```.
+
+A ```while``` loop keeps running while its condition is ```True```.
+
+## 3.2.5 Looping your code with ```for```
 
 
 
