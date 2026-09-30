@@ -202,6 +202,16 @@ The loop continues while the condition is ```True``` and stops when the conditio
 
 ## 3.2.2 An infinite loop
 
+An infinite loop, also called an ```endless loop```, is a loop that never reaches a ```False``` condition.
+
+
+A while infinite loop generally follows this cycle:
+
+```
+Check → True → Run → Check → True → Run → Check → True → ...
+```
+
+
 
 
 
