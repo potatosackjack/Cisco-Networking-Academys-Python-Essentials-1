@@ -347,6 +347,18 @@ i = 5
 
 ## 3.2.8 The break and continue statements
 
+```break``` → stop the entire loop.
+
+```continue``` → skip the rest of the current iteration and start the next one.
+
+```break``` – exits the loop immediately, and unconditionally ends the loop's operation; the program begins to execute the nearest instruction after the loop's body;
+
+```continue``` – behaves as if the program has suddenly reached the end of the body; the next turn is started and the condition expression is tested immediately.
+
+Both are Python keywords.
+
+## 3.2.12 The while loop and the else branch
+
 
 
 
