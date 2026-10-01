@@ -313,7 +313,7 @@ A ```for``` loop is like a conveyor belt:
         DONE
 
 
-range() has three parts:
+```range```() has three parts:
 
 ```
 range(start, stop, step)
@@ -345,7 +345,7 @@ i = 2
 i = 5
 ```
 
-
+## 3.2.8 The break and continue statements
 
 
 
