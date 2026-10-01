@@ -294,10 +294,37 @@ While in looks for containment (whether something is inside a group), Python als
 ## 3.2.6 More about the ```for``` loop and the ```range()``` function with three arguments
 
 
+range() has three parts:
+
+```
+range(start, stop, step)
+```
 
 
+Example:
 
+```
+range(2, 8, 3)
+```
 
+Part | Value | Meaning |
+--- | --- | --- |
+start | 2 | Start counting at 2 |
+stop |8 | Stop before reaching 8 |
+step | 3 | Add 3 each time
+
+So Python generates:
+
+```2 → 5 → 8```
+
+But 8 is not included, because the **stop value is exclusive**.
+
+Therefore, i takes these values:
+
+```
+i = 2
+i = 5
+```
 
 
 
