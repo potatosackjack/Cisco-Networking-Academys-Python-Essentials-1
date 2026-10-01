@@ -293,6 +293,25 @@ While in looks for containment (whether something is inside a group), Python als
 
 ## 3.2.6 More about the ```for``` loop and the ```range()``` function with three arguments
 
+A ```for``` loop is like a conveyor belt:
+
+
+        ITEMS
+          ↓
+     ┌──────────┐
+     │   ITEM 1 │ → perform action
+     └──────────┘
+          ↓
+     ┌──────────┐
+     │   ITEM 2 │ → perform action
+     └──────────┘
+          ↓
+     ┌──────────┐
+     │   ITEM 3 │ → perform action
+     └──────────┘
+          ↓
+        DONE
+
 
 range() has three parts:
 
