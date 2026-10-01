@@ -198,8 +198,6 @@ Check condition again
 The condition is checked before every iteration, ```while``` loops are sometimes described as condition-controlled loops.
 The loop continues while the condition is ```True``` and stops when the condition becomes ```False```.
 
-
-
 ## 3.2.2 An infinite loop
 
 An infinite loop, also called an ```endless loop```, is a loop that never reaches a ```False``` condition.
@@ -237,6 +235,64 @@ Here's what happens:
 A ```while``` loop keeps running while its condition is ```True```.
 
 ## 3.2.5 Looping your code with ```for```
+
+The ```for``` Loop in Python allows you to repeat code for each item ```in``` a collection or sequence. ```for``` is a built in Python keyword and a reserved word used to create a for loop, which allows you to iterate over a sequence (such as a list, tuple, dictionary, set, or string) or any other iterable object.
+
+Example: 
+
+Input:
+
+```
+names = ["James", "Sarah", "Mike", "Lisa", "John"]
+
+for name in names:
+    print("Hello", name)
+```
+
+Output: 
+
+```
+Hello James
+Hello Sarah
+Hello Mike
+Hello Lisa
+Hello John
+```
+
+Instead of writing print() five separate times, the for loop handles the **repetition** for you. Because it is a keyword, you cannot use it as a variable name, function name, or any other identifier in your code.
+
+
+🔑 My perspective: Not really mention in the chapter in detail but the ```in``` keyword is used as a membership operator. It checks if a value exists within a collection (like a list, string, tuple, set, or dictionary), or to iterate over a sequence within a for loop.
+
+The Two Main Ways in is Used: 
+
+1. Membership Testing (As an Operator)
+
+When used between an element and a collection, it acts as a boolean operator. It returns True if the item is present and False if it is not.
+
+```
+# Checking a list
+fruits = ["apple", "banana", "cherry"]
+print("banana" in fruits)  # Output: True
+
+# Checking a string (substring search)
+print("cat" in "caterpillar")  # Output: True
+```
+
+*Note: You can also combine it with not to check for absence (not in).*
+
+2. When paired with a for statement, in is used to sequentially step through each item in an iterable.
+
+```
+# Iterating over a sequence
+for number in [1, 2, 3]:
+    print(number)
+```
+
+While in looks for containment (whether something is inside a group), Python also has a separate keyword named is, which checks for object identity (whether two variables point to the exact same place in computer memory).
+
+## 3.2.6 More about the ```for``` loop and the ```range()``` function with three arguments
+
 
 
 
