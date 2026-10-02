@@ -558,6 +558,8 @@ Lists become especially useful when you have many pieces of related data that yo
 
 A **list** can hold as many values as your computer's available memory allows.
 
+## 3.4.2 Indexing lists
+
 
 
 
