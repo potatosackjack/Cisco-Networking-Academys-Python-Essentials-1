@@ -392,5 +392,41 @@ The ```not``` operator reverses a Boolean value or the result of a condition. If
 | `True`         | `not True`  | `False` |
 | `False`        | `not False` | `True`  |
 
-You can think of not as a ```Boolean switch```.
+You can think of not as a ```Boolean switch```. Each time not is applied, it flips the Boolean value.
+
+## 3.3.2 Logical expressions
+
+There are two common relationships called De Morgan's laws:
+
+
+```not (A and B)``` is equivalent to: ```(not A) or (not B)```
+
+And:
+
+```not (A or B)```is equivalent to: ```(not A) and (not B)```
+
+Simple takeaway: not reverses the entire logical result when placed before a pairwise expression such as (A and B) or (A or B).
+
+```
+        AND / OR
+           ↓
+   True or False
+           ↓
+          NOT
+           ↓
+   opposite result
+```
+
+## 3.3.3 Logical values vs. single bits
+
+Logical operators (```and```, ```or```, and ```not```) evaluate values as a whole rather than operating on individual bits. Bitwise operators, in contrast, operate on individual bits.
+
+| Type        | Operators          | How they work                          |                             
+| ----------- | ------------------ | -------------------------------------- |
+| **Logical** | `and`, `or`, `not` | Treat values/conditions as a **whole** |                        
+| **Bitwise** | `&`, `, `^`, `~`   | Work on **individual bits**            |
+
+
+
+
 
