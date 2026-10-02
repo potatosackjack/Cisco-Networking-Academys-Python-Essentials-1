@@ -426,7 +426,138 @@ Logical operators (```and```, ```or```, and ```not```) evaluate values as a whol
 | **Logical** | `and`, `or`, `not` | Treat values/conditions as a **whole** |                        
 | **Bitwise** | `&`, `, `^`, `~`   | Work on **individual bits**            |
 
-## 3.3.4 Bitwise operators
+## 🆘 3.3.4 Bitwise operators
+
+There are four operators that allow you to **manipulate single bits of data**. They are called **bitwise operators**.
+
+Here are all of them:
+
+- & (ampersand) ‒ bitwise conjunction;
+- | (bar) ‒ bitwise disjunction;
+- ~ (tilde) ‒ bitwise negation;
+- ^ (caret) ‒ bitwise exclusive or (xor).
+
+**& — Bitwise AND**
+
+The ```&``` operator produces ```1``` only when both corresponding bits are ```1```.
+
+| A | B | A `&` B |
+| - | - | ------- |
+| 0 | 0 | 0       |
+| 0 | 1 | 0       |
+| 1 | 0 | 0       |
+| 1 | 1 | **1**   |
+
+**| — Bitwise OR**
+
+The ```|``` operator produces ```1``` when at least one of the corresponding bits is ```1```.
+
+| A | B | A ```\|``` B |
+|---|---|---|
+| 0 | 0 | 0 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 1 |
+
+**^ — Bitwise XOR**
+
+```^``` means **exclusive OR**. It produces 1 when the two corresponding bits are different.
+
+| A | B | A `^` B |
+| - | - | ------- |
+| 0 | 0 | 0       |
+| 0 | 1 | **1**   |
+| 1 | 0 | **1**   |
+| 1 | 1 | 0       |
+
+Bitwise operators work on the individual bits of integer values.
+
+**Bitwise Operation: ```~``` — Bitwise NOT**
+
+The ```~``` operator is called **bitwise NOT**. Unlike ```&```, ```|```, and ```^```, it works with **one integer at a time**.
+
+It **flips every bit**:
+
+- 0 becomes 1
+- 1 becomes 0
+
+Summary: 
+
+| Operator | Name        | What it does                      |                                    |
+| -------- | ----------- | --------------------------------- | ---------------------------------- |
+| `&`      | Bitwise AND | `1` if **both** bits are `1`      |                                    |
+| `        | `           | Bitwise OR                        | `1` if **at least one** bit is `1` |
+| `^`      | Bitwise XOR | `1` if the bits are **different** |                                    |
+| `~`      | Bitwise NOT | **Flips every bit**               |                                    |
+
+## 🆘 3.3.5 How do we deal with single bits?
+
+## 🆘 3.3.6 Binary left shift and binary right shift
+
+The shift operators are essentially ways of manipulating an integer by moving its binary digits rather than directly performing multiplication or division.
+
+| Operator | Name        | Direction | Basic effect            |
+| -------- | ----------- | --------- | ----------------------- |
+| `<<`     | Left shift  | ←         | Multiply by powers of 2 |
+| `>>`     | Right shift | →         | Divide by powers of 2   |
+
+Example:
+
+```
+20 >> 1
+```
+
+Binary:
+
+```
+20 = 10100
+
+10100 >> 1
+       ↓
+01010
+```
+
+01010 is 10 in decimal. 
+
+
+# 3.4.0 Lists
+## 3.4.1 Why do we need lists?
+
+A **list** lets you store multiple values together in one variable.
+
+Example:
+
+```
+List: [10, 20, 30, 40]
+
+1st cycle → number = 10 → print(10)
+2nd cycle → number = 20 → print(20)
+3rd cycle → number = 30 → print(30)
+4th cycle → number = 40 → print(40)
+             ↓
+          List ends
+```
+
+Python lists can store almost any type of value:
+
+Numbers: ```numbers = [10, 20, 30, 40]```
+Strings: ```names = ["John", "Sarah", "Mike"]```
+Booleans: ```answers = [True, False, True, True]```
+Python lists can store a mixture of types: ```items = ["John", 25, True, 3.14]```
+Lists can even contain other lists:
+
+```
+students = [
+    ["John", 20],
+    ["Sarah", 22],
+    ["Mike", 19]
+]
+```
+
+Lists become especially useful when you have many pieces of related data that you want to work with using loops, indexing, adding/removing items, etc.
+
+A **list** can hold as many values as your computer's available memory allows.
+
 
 
 
