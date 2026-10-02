@@ -426,6 +426,8 @@ Logical operators (```and```, ```or```, and ```not```) evaluate values as a whol
 | **Logical** | `and`, `or`, `not` | Treat values/conditions as a **whole** |                        
 | **Bitwise** | `&`, `, `^`, `~`   | Work on **individual bits**            |
 
+## 3.3.4 Bitwise operators
+
 
 
 
