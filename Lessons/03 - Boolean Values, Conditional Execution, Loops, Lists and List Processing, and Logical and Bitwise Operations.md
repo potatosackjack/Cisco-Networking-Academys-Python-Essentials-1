@@ -357,11 +357,40 @@ i = 5
 
 Both are Python keywords.
 
-## 3.2.12 The while loop and the else branch
+# 3.3.0 Logic and bit operations in Python
 
+## Computer logic
 
+Computer logic deals with the conjunction ```and``` and the disjunction ```or```. Both are called **logical operators** and are Python keywords. The and conjunction requires both conditions to be ```True```, while the or disjunction requires at least one condition to be ```True```.
 
+```and``` → BOTH must be true:
 
+```
+True and True   → True
+True and False  → False
+False and True  → False
+False and False → False
+```
 
+or → AT LEAST ONE must be true:
 
+```
+True or True   → True
+True or False  → True
+False or True  → True
+False or False → False
+```
+
+Terminology point: **conjunction** and **disjunction** describe the logical operations; and and or are the Python keywords/operators that perform them.
+
+The ```not``` operator is a Python logical operator that reverses the truth value of a condition.
+
+The ```not``` operator reverses a Boolean value or the result of a condition. If the result is ```True```, not makes it ```False```; if the result is ```False```, not makes it ```True```.
+
+| Original value | Apply `not` | Result  |
+| -------------- | ----------- | ------- |
+| `True`         | `not True`  | `False` |
+| `False`        | `not False` | `True`  |
+
+You can think of not as a ```Boolean switch```.
 
