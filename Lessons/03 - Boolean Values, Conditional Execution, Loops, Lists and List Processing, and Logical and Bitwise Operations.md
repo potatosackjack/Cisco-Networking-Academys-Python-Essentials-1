@@ -703,4 +703,10 @@ Remember: Positive indexes count from the beginning, while negative indexes coun
 
 ## 3.4.7 Functions vs. methods
 
+Methods are technically functions that are associated with an object/class. As a beginner, however, the easiest distinction to remember is:
 
+|  | Function | Method |
+|--- | --- | --- |
+| Called by | Its name | An object + |
+| Example | len(numbers) | numbers.remove(20) |
+| Associated with | General operation |A particular object/type |
