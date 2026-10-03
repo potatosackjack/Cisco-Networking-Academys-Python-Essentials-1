@@ -657,6 +657,21 @@ Remember:
 - "del numbers[1]" → removes the element at index 1
 - "numbers.remove(20)" → removes the element with the value 20
 
+.remove() only removes the first matching element it finds, starting from the left.
+
+If you want to remove every occurrence of a particular value, you can use a while loop with .remove():
+
+```
+numbers = [10, 20, 30, 20, 40, 20]
+
+while 20 in numbers:
+    numbers.remove(20)
+
+print(numbers)
+
+```
+
+Output: ```[10, 30, 40]```
 
 ## 3.4.5 Negative indices are legal
 
