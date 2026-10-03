@@ -605,11 +605,86 @@ print(numbers[3])  # 40
 
 Remember: The index tells Python which element you want to access.
 
+🔑 The ```len()```function takes the list's name as an argument, and returns the number of elements currently stored inside the list (in other words ‒ the list's length).
 
 
 ## 3.4.4 Removing elements from a list
 
+Removing elements
+
+Elements can be removed from a list in several ways.
+
+Using "del"
+
+The "del" statement can remove an element by its index:
+
+numbers = [10, 20, 30, 40]
+
+del numbers[1]
+
+print(numbers)
+
+Output:
+
+[10, 30, 40]
+
+The element "20" was removed because it was at index "1".
+
+You can also use a negative index:
+
+del numbers[-1]
+
+This removes the last element.
+
+Using "remove()"
+
+The "remove()" method removes an element by its value rather than its index:
+
+numbers = [10, 20, 30, 40]
+
+numbers.remove(20)
+
+print(numbers)
+
+Output:
+
+[10, 30, 40]
+
+Here, Python searches for the value "20" and removes it.
+
+Remember:
+
+- "del numbers[1]" → removes the element at index 1
+- "numbers.remove(20)" → removes the element with the value 20
 
 
+## 3.4.5 Negative indices are legal
 
+Negative indexes
+
+Python also allows you to use negative indexes to access elements starting from the end of the list.
+
+The last element has an index of "-1", the second-to-last has an index of "-2", and so on.
+
+Element:   10     20     30     40
+Index:      0      1      2      3
+Negative:  -4     -3     -2     -1
+
+For example:
+
+print(numbers[-1])  # 40
+print(numbers[-2])  # 30
+print(numbers[-3])  # 20
+print(numbers[-4])  # 10
+
+So:
+
+- "numbers[0]" → first element
+- "numbers[3]" → last element
+- "numbers[-1]" → last element
+- "numbers[-2]" → second-to-last element
+
+Remember: Positive indexes count from the beginning, while negative indexes count from the end.
+
+## 3.4.6 
 
