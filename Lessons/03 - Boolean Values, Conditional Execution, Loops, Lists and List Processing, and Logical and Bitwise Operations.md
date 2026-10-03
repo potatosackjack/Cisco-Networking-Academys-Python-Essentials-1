@@ -729,6 +729,36 @@ Easy way to remember:
 
 ## 3.4.9 Making use of lists
 
+A list is useful because it allows you to treat multiple related values as one collection.
+
+You can then:
+
+Access individual elements
+Change elements
+Add elements
+Remove elements
+Loop through the elements
+Process the collection as a whole
+
+That's what makes lists so useful for things like sorting numbers, storing names, keeping track of scores, and processing data.
+
+Example: 
+
+```
+my_list = [10, 1, 8, 3, 5]
+total = 0
+
+for i in range(len(my_list)):
+    total += my_list[i]
+
+print(total)
+```
+
+# 3.5 Sorting simple lists: the bubble sort algorithm
+## 3.5.1 The bubble sort
+
+
+
 
 
 
