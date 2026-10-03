@@ -701,5 +701,6 @@ So:
 
 Remember: Positive indexes count from the beginning, while negative indexes count from the end.
 
-## 3.4.6 
+## 3.4.7 Functions vs. methods
+
 
