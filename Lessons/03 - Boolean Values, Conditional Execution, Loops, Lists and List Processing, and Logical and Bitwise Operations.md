@@ -93,14 +93,14 @@ The answer will be (or rather, always is) False.
 
 The ```==``` (equal to) operator compares the values of two operands. If they are equal, the result of the comparison is ```True```. If they are not equal, the result of the comparison is ```False```.
 
-### Inequality: the not equal to operator (!=)**
+### Inequality: the not equal to operator (!=)
 
 The ```!=``` (not equal to) operator compares the values of two operands, too. Here is the difference: if they are equal, the result of the comparison is ```False```. If they are not equal, the result of the comparison is ```True```.
 
 🧠 My perspective: I really don't get the point of the inequality operator. I know it has importance and will probably will
 show itself to be really useful in the future but as of right now it has be questioning why ever concept in code is black and white.
 
-### Comparison operators: greater than**
+### Comparison operators: greater than
 
 ```>``` (greater than) operator. 
 
@@ -108,7 +108,7 @@ The greater than operator ```>``` compares two values to determine whether the v
 
 It returns a **Boolean value**: It returns a **Boolean value**: It returns either ```True``` or ```False```.
 
-### Comparison operators: greater than or equal to**
+### Comparison operators: greater than or equal to
 
 ```>=``` (greater than or equal to).
 
@@ -116,7 +116,7 @@ The >= operator checks whether the value on the left is greater than OR equal to
 
 It returns a **Boolean value**: It returns a **Boolean value**: It returns either ```True``` or ```False```.
 
-### Comparison operators: less than**
+### Comparison operators: less than
 
 ```<``` (less than) operator.
 
@@ -124,7 +124,7 @@ The ```<``` operator checks whether the value on the **left is smaller than** th
 
 It returns a **Boolean value**: It returns a **Boolean value**: It returns either ```True``` or ```False```.
 
-### Comparison operators: less than or equal to**
+### Comparison operators: less than or equal to
 
 ```<=``` (less than or equal to).
 
