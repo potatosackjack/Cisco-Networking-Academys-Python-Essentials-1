@@ -581,9 +581,33 @@ The basic format of a list is to give the list a variable name, followed by `=`,
 variable_name = [element1, element2, element3]
 ```
 
+## 3.4.3 Accessing list content 
 
-Example: 
+Accessing elements
 
+To access an element in a list, use its index inside square brackets after the list's variable name.
+
+For example:
+
+numbers = [10, 20, 30, 40]
+
+print(numbers[0])
+
+Output:
+
+10
+
+Because the first element has an index of "0", "numbers[0]" accesses the first element.
+
+print(numbers[1])  # 20
+print(numbers[2])  # 30
+print(numbers[3])  # 40
+
+Remember: The index tells Python which element you want to access.
+
+
+
+## 3.4.4 Removing elements from a list
 
 
 
