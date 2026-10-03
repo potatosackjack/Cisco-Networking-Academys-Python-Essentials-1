@@ -710,3 +710,25 @@ Methods are technically functions that are associated with an object/class. As a
 | Called by | Its name | An object + |
 | Example | len(numbers) | numbers.remove(20) |
 | Associated with | General operation |A particular object/type |
+
+## 3.4.8 Adding elements to a list: ```append()``` and ```insert()``` 
+
+Python provides list methods for adding elements to an existing list. Two important ones are append() and insert().
+
+ .append() vs. .insert()
+
+| Method | What it does |
+|--------|--------------|
+| append(x) |Adds x to the end of the list |
+| insert(i, x) | Adds x at index i         |
+
+Easy way to remember:  
+
+```.append()``` → add to the end     
+```.insert()``` → add at a specific position  
+
+## 3.4.9 Making use of lists
+
+
+
+
