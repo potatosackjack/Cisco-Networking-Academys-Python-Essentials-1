@@ -583,83 +583,92 @@ variable_name = [element1, element2, element3]
 
 ## 3.4.3 Accessing list content 
 
-Accessing elements
+**Accessing elements**
 
-To access an element in a list, use its index inside square brackets after the list's variable name.
+To access an element in a **list**, use its **index** inside square **brackets** after the list's variable name.
 
 For example:
 
+```
 numbers = [10, 20, 30, 40]
 
 print(numbers[0])
+```
 
 Output:
 
-10
+```10```
 
-Because the first element has an index of "0", "numbers[0]" accesses the first element.
+Because the first **element** has an **index** of "0", "numbers[0]" accesses the first element.
 
+```
 print(numbers[1])  # 20
 print(numbers[2])  # 30
 print(numbers[3])  # 40
+```
 
-Remember: The index tells Python which element you want to access.
+Remember: The ```index``` tells Python which **element** you want to access.
 
 🔑 The ```len()```function takes the list's name as an argument, and returns the number of elements currently stored inside the list (in other words ‒ the list's length).
 
 
 ## 3.4.4 Removing elements from a list
 
-Removing elements
+**Removing elements**
 
 Elements can be removed from a list in several ways.
 
-Using "del"
+Using ```del```
 
-The "del" statement can remove an element by its index:
+The ```del``` statement can remove an element by its index:
 
+```
 numbers = [10, 20, 30, 40]
-
 del numbers[1]
-
+  
 print(numbers)
-
-Output:
-
+```
+  
+Output:  
+  
+```
 [10, 30, 40]
+```
 
 The element "20" was removed because it was at index "1".
 
-You can also use a negative index:
+You can also use a **negative index**:
 
+```
 del numbers[-1]
+```
 
 This removes the last element.
 
-Using "remove()"
+Using **.remove()**
+  
+The ```.remove()``` method removes an element by its value rather than its index:
 
-The "remove()" method removes an element by its value rather than its index:
-
+```
 numbers = [10, 20, 30, 40]
-
 numbers.remove(20)
 
 print(numbers)
+```
 
-Output:
-
-[10, 30, 40]
+Output: ```[10, 30, 40]```
 
 Here, Python searches for the value "20" and removes it.
 
 Remember:
 
-- "del numbers[1]" → removes the element at index 1
-- "numbers.remove(20)" → removes the element with the value 20
+- del numbers[1]" → removes the element at index 1
+- numbers.remove(20)" → removes the element with the value 20
 
-.remove() only removes the first matching element it finds, starting from the left.
+```.remove()``` only removes the first matching **element** it finds, starting from the left.
 
-If you want to remove every occurrence of a particular value, you can use a while loop with .remove():
+If you want to remove every occurrence of a particular value, you can use a while loop with ```.remove()```:
+
 
 ```
 numbers = [10, 20, 30, 20, 40, 20]
@@ -675,22 +684,24 @@ Output: ```[10, 30, 40]```
 
 ## 3.4.5 Negative indices are legal
 
-Negative indexes
+**Negative indexes**
 
 Python also allows you to use negative indexes to access elements starting from the end of the list.
 
 The last element has an index of "-1", the second-to-last has an index of "-2", and so on.
 
-Element:   10     20     30     40
-Index:      0      1      2      3
-Negative:  -4     -3     -2     -1
+**Element**:   10     20     30     40
+**Index**:      0      1      2      3
+**Negative**:  -4     -3     -2     -1
 
 For example:
 
+```
 print(numbers[-1])  # 40
 print(numbers[-2])  # 30
 print(numbers[-3])  # 20
 print(numbers[-4])  # 10
+```
 
 So:
 
@@ -703,7 +714,7 @@ Remember: Positive indexes count from the beginning, while negative indexes coun
 
 ## 3.4.7 Functions vs. methods
 
-Methods are technically functions that are associated with an object/class. As a beginner, however, the easiest distinction to remember is:
+**Methods** are technically functions that are associated with an object/class. As a beginner, however, the easiest distinction to remember is:
 
 |  | Function | Method |
 |--- | --- | --- |
@@ -713,9 +724,9 @@ Methods are technically functions that are associated with an object/class. As a
 
 ## 3.4.8 Adding elements to a list: ```append()``` and ```insert()``` 
 
-Python provides list methods for adding elements to an existing list. Two important ones are append() and insert().
+Python provides list methods for adding elements to an existing list. Two important ones are ```.append()``` and ```.insert()```.
 
- .append() vs. .insert()
+ ```.append()``` vs. ```.insert()```
 
 | Method | What it does |
 |--------|--------------|
@@ -733,12 +744,12 @@ A list is useful because it allows you to treat multiple related values as one c
 
 You can then:
 
-Access individual elements
-Change elements
-Add elements
-Remove elements
-Loop through the elements
-Process the collection as a whole
+- Access individual elements
+- Change elements
+- Add elements
+- Remove elements
+- Loop through the elements
+- Process the collection as a whole
 
 That's what makes lists so useful for things like sorting numbers, storing names, keeping track of scores, and processing data.
 
