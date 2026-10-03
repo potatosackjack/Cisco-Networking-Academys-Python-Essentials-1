@@ -540,11 +540,11 @@ List: [10, 20, 30, 40]
 
 Python lists can store almost any type of value:
 
-Numbers: ```numbers = [10, 20, 30, 40]```
-Strings: ```names = ["John", "Sarah", "Mike"]```
-Booleans: ```answers = [True, False, True, True]```
-Python lists can store a mixture of types: ```items = ["John", 25, True, 3.14]```
-Lists can even contain other lists:
+Numbers: ```numbers = [10, 20, 30, 40]```   
+Strings: ```names = ["John", "Sarah", "Mike"]```  
+Booleans: ```answers = [True, False, True, True]```   
+Python lists can store a mixture of types: ```items = ["John", 25, True, 3.14]```   
+Lists can even contain other lists:  
 
 ```
 students = [
@@ -559,6 +559,30 @@ Lists become especially useful when you have many pieces of related data that yo
 A **list** can hold as many values as your computer's available memory allows.
 
 ## 3.4.2 Indexing lists
+
+Lists are written inside square brackets `[]`. The individual items inside the brackets are called **elements**.
+
+Each element has an **index**, which identifies its position in the list. Python uses **zero-based indexing**, meaning the first element has an index of `0`.
+
+The indexes increase from left to right. For example:
+
+```python
+numbers = [10, 20, 30, 40]
+```
+
+```text
+Element:  10    20    30    40
+Index:     0     1     2     3
+```
+
+The basic format of a list is to give the list a variable name, followed by `=`, and then place the elements inside square brackets:
+
+```python
+variable_name = [element1, element2, element3]
+```
+
+
+Example: 
 
 
 
