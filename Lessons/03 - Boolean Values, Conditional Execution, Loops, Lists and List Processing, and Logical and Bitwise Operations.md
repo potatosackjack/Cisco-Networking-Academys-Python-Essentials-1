@@ -768,8 +768,23 @@ print(total)
 # 3.5 Sorting simple lists: the bubble sort algorithm
 ## 3.5.1 The bubble sort
 
+Bubble sort compares neighboring elements and swaps them when they are in the wrong order.
 
+**The basic idea**
 
+```
+Compare neighboring elements
+        ↓
+Are they in the wrong order?
+        ↓
+     Yes → Swap them
+        ↓
+Move to the next pair
+        ↓
+Repeat
+```
+
+## 3.5.2 Sorting a list
 
 
 
