@@ -1152,4 +1152,4 @@ True
 
 **`in` and `not in` are membership operators. They check whether a value is present or absent in a sequence and return `True` or `False`.**
 
-
+# 3.7.0 Lists in advanced applications
