@@ -784,7 +784,372 @@ Move to the next pair
 Repeat
 ```
 
-## 3.5.2 Sorting a list
+## 🆘 3.5.2 Sorting a list
 
+**Study**
+
+```
+my_list = []
+swapped = True
+num = int(input("How many elements do you want to sort: "))
+
+for i in range(num):
+    val = float(input("Enter a list element: "))
+    my_list.append(val)
+
+while swapped:
+    swapped = False
+    for i in range(len(my_list) - 1):
+        if my_list[i] > my_list[i + 1]:
+            swapped = True
+            my_list[i], my_list[i + 1] = my_list[i + 1], my_list[i]
+
+print("\nSorted:")
+print(my_list)
+```
+# Operations on lists
+## 3.6.1 The inner life of lists
+
+The key idea is that **`list_2 = list_1` does not create a second list**. It creates a second name that points to the **same list**.
+
+### Start with this:
+
+```python
+list_1 = [1]
+```
+
+Python creates a list somewhere in memory:
+
+```text
+Memory
+┌─────────┐
+│  [1]    │
+└─────────┘
+    ▲
+    │
+ list_1
+```
+
+Think of `list_1` as a **name/label** attached to that list.
+
+---
+
+### Then:
+
+```python
+list_2 = list_1
+```
+
+This does **not** mean:
+
+> "Make a new list containing everything inside `list_1`."
+
+Instead, it means:
+
+> "Give `list_2` the same reference to the list that `list_1` has."
+
+So now:
+
+```text
+Memory
+┌─────────┐
+│  [1]    │
+└─────────┘
+    ▲
+    │
+ ┌──┴───┐
+ │      │
+list_1 list_2
+```
+
+There is still **only one list**.
+
+Both names point to it.
+
+---
+
+### Now this happens:
+
+```python
+list_1[0] = 2
+```
+
+You're saying:
+
+> "Go to the list that `list_1` refers to and change item `0` to `2`."
+
+The list becomes:
+
+```text
+Memory
+┌─────────┐
+│  [2]    │
+└─────────┘
+    ▲
+    │
+ ┌──┴───┐
+ │      │
+list_1 list_2
+```
+
+Because `list_2` points to that **same list**, it now sees `[2]` too.
+
+Therefore:
+
+```python
+print(list_2)
+```
+
+outputs:
+
+```text
+[2]
+```
+
+### The important distinction
+
+Think of **names** and **objects** separately:
+
+```text
+list_1 ──────┐
+             ↓
+           [1]     ← the actual list/object
+             ↑
+list_2 ──────┘
+```
+
+`list_1` and `list_2` are **names**.
+
+`[1]` is the **list object**.
+
+So:
+
+```python
+list_2 = list_1
+```
+
+means roughly:
+
+> **"Make `list_2` refer to the same object as `list_1`."**
+
+It does **not** mean:
+
+> "Copy the contents of the list into a new list."
+
+---
+
+### A simple analogy
+
+Imagine you have a house:
+
+```text
+Address: 123 Main Street
+```
+
+You have two labels:
+
+```text
+list_1 → 123 Main Street
+list_2 → 123 Main Street
+```
+
+If you change something inside the house, **both labels still lead to that same changed house**.
+
+You're not creating a second house by giving the address to another person.
+
+That's essentially what happens here.
+
+### One sentence to remember
+
+> **Assignment between list variables copies the reference to the list, not the list itself.**
+
+And that's why modifying the list through `list_1` is visible through `list_2`.
+
+## 3.6.2 Powerful slices
+
+A slice is Python syntax that allows you to select a portion of a sequence, such as a list. When you use slicing on a list, Python creates a new list containing the selected elements.  
+
+A **slice** is a form of Python syntax that allows you to **select part of a list and create a brand-new list containing those elements**.
+
+Unlike assignment (`list_2 = list_1`), slicing creates a **separate list object**.
+
+```python
+list_1 = [1, 2, 3, 4]
+list_2 = list_1[:]
+
+list_1[0] = 99
+
+print(list_1)  # [99, 2, 3, 4]
+print(list_2)  # [1, 2, 3, 4]
+```
+
+Here, `list_2 = list_1[:]` creates a new list containing the elements of `list_1`. Changes made to `list_1` do not change `list_2`.
+
+The key contrast is:
+
+```
+list_2 = list_1    # same list
+list_2 = list_1[:] # new list
+```
+
+## 3.6.3 Slices – negative indices
+
+A **negative index** allows you to access elements in a list by **counting backward from the end** of the list.
+
+The last element has an index of `-1`, the second-to-last has an index of `-2`, and so on.
+
+```python
+my_list = [10, 20, 30, 40, 50]
+```
+
+The indices look like this:
+
+```text
+Positive:    0    1    2    3    4
+             ↓    ↓    ↓    ↓    ↓
+List:       [10] [20] [30] [40] [50]
+             ↑    ↑    ↑    ↑    ↑
+Negative:   -5   -4   -3   -2   -1
+```
+
+For example:
+
+```python
+print(my_list[-1])
+```
+
+outputs:
+
+```text
+50
+```
+
+And:
+
+```python
+print(my_list[-2])
+```
+
+outputs:
+
+```text
+40
+```
+
+**The important idea**
+
+**Negative indices count backward from the end of a sequence, with `-1` representing the last element.**
+
+Negative indices can also be used with **slicing**:
+
+```python
+my_list[-3:]
+```
+
+produces:
+
+```python
+[30, 40, 50]
+```
+
+So you can think of it simply as:
+
+**Positive index → count from the beginning**
+
+**Negative index → count from the end**
+
+## 3.6.5 Lists – some simple programs
+
+The **`in`** and **`not in`** operators are used to **check whether a value exists inside a sequence**, such as a list or string.
+
+They produce a Boolean value: `True` or `False`.
+
+**`in`**
+
+`in` asks:
+
+**"Is this value inside the sequence?"**
+
+```python
+my_list = [10, 20, 30, 40]
+
+print(20 in my_list)
+```
+
+Output:
+
+```text
+True
+```
+
+Because `20` is in `my_list`.
+
+```python
+print(50 in my_list)
+```
+
+Output:
+
+```text
+False
+```
+
+Because `50` is not in the list.
+
+`not in`
+
+`not in` asks:
+
+**"Is this value NOT inside the sequence?"**
+
+```python
+print(50 not in my_list)
+```
+
+Output:
+
+```text
+True
+```
+
+Because `50` is not in the list.
+
+```python
+print(20 not in my_list)
+```
+
+Output:
+
+```text
+False
+```
+
+Because `20` **is** in the list.
+
+**Think of them as a membership test**
+
+```text
+20 in [10, 20, 30]       → True
+50 in [10, 20, 30]       → False
+
+50 not in [10, 20, 30]   → True
+20 not in [10, 20, 30]   → False
+```
+
+You can also use them with strings:
+
+```python
+"Python" in "I am learning Python"
+```
+
+produces:
+
+```text
+True
+```
+
+**Note for your studies**
+
+**`in` and `not in` are membership operators. They check whether a value is present or absent in a sequence and return `True` or `False`.**
 
 
