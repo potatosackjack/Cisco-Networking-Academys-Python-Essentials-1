@@ -1153,3 +1153,97 @@ True
 **`in` and `not in` are membership operators. They check whether a value is present or absent in a sequence and return `True` or `False`.**
 
 # 3.7.0 Lists in advanced applications
+
+## 3.7.1 Lists in lists
+
+A **list can contain other lists as its elements**. This is sometimes called a **nested list**.
+
+For example:
+
+```python
+my_list = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+```
+
+Here, `my_list` contains **three elements**, and each element happens to be another list.
+
+You can think of it like a table:
+
+```text
+my_list
+   │
+   ├── [1, 2, 3]
+   ├── [4, 5, 6]
+   └── [7, 8, 9]
+```
+
+**Accessing a list inside a list**
+
+The first index selects the **inner list**:
+
+```python
+print(my_list[0])
+```
+
+Output:
+
+```text
+[1, 2, 3]
+```
+
+Then you can use another index to access an element **inside that inner list**:
+
+```python
+print(my_list[0][1])
+```
+
+Output:
+
+```text
+2
+```
+
+Read it from left to right:
+
+```python
+my_list[0][1]
+```
+
+* `my_list[0]` → gets the first inner list: `[1, 2, 3]`
+* `[1]` → gets the second element of that inner list: `2`
+
+So you can think of it as:
+
+```text
+my_list[outer index][inner index]
+```
+
+**Changing an element**
+
+Nested lists can be modified just like regular lists:
+
+```python
+my_list[1][2] = 10
+```
+
+The list becomes:
+
+```python
+[
+    [1, 2, 3],
+    [4, 5, 10],
+    [7, 8, 9]
+]
+```
+
+The important idea is that **a list inside a list is still just an element of the outer list**. That element happens to be another list.
+
+This becomes especially useful for representing things like **tables, grids, matrices, and groups of related data**.
+
+
+
+
+
