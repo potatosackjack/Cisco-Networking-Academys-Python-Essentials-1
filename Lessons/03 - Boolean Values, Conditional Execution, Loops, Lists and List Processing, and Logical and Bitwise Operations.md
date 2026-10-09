@@ -1243,6 +1243,207 @@ The important idea is that **a list inside a list is still just an element of th
 
 This becomes especially useful for representing things like **tables, grids, matrices, and groups of related data**.
 
+## 3.7.2 Two-dimensional arrays
+
+A **two-dimensional array** is a data structure that organizes values into **rows** and **columns**, similar to a table or a spreadsheet.
+
+In Python, we commonly represent a two-dimensional array using a list of lists.
+
+**1. Creating a two-dimensional array**
+
+Consider this example:
+
+Python
+
+Run
+
+```
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+```
+
+We can visualize it as a grid:
+
+| 1 | 2 | 3 |
+|---|---|---|
+| 4 | 5 | 6 |   
+|---|---|---|
+| 7 | 8 | 9 |    
+|---|---|---|
+
+**3 rows × 3 columns**
+
+The outer list contains three inner lists. Each inner list represents one row.
+
+- Rows run horizontally.
+- Columns run vertically.
+
+Each value occupies a position identified by **a row index** and a **column index**.
+
+**2. Accessing elements**
+
+To access an element, use two indexes:
+
+Python
+
+Run
+
+```
+matrix[row_index][column_index]
+```
+
+Python starts counting indexes at `0`, not `1`.
+
+For example:
+
+Python
+
+Run
+
+```
+print(matrix[0][0])  # 1
+print(matrix[0][2])  # 3
+print(matrix[1][1])  # 5
+print(matrix[2][1])  # 8
+```
+
+Output:
+
+```
+1
+3
+5
+8
+```
+
+Think of the first index as choosing the row, and the second index as choosing the column.
+
+**Try selecting a position**
+
+Choose a row index and column index. Both start at 0.
+
+Row index
+
+0
+
+1
+
+2
+
+Column index
+
+0
+
+1
+
+2
+
+Selected expression
+
+**3. Changing an element**
+
+You can modify a value by specifying its row and column indexes.
+
+Python
+
+Run
+
+```
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+matrix[1][1] = 50
+
+print(matrix)
+```
+
+Output:
+
+```
+[[1, 2, 3], [4, 50, 6], [7, 8, 9]]
+```
+
+The expression ```matrix[1][1] = 50``` changes the element in the second row and second column from ```5``` to ```50```.
+
+**4. Processing a two-dimensional array with loops**
+
+Nested lists are especially useful when combined with nested ```for``` loops.
+
+Python
+
+Run
+
+```
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+for row in matrix:
+    for number in row:
+        print(number)
+```
+
+Output:
+
+```
+1
+2
+3
+4
+5
+6
+7
+8
+9
+```
+
+Here's how the loops work:
+
+1. The outer loop selects one row at a time.
+
+2. The inner loop visits each number in the selected row.
+
+3. Once the inner loop finishes a row, the outer loop moves to the next row.
+
+This is an example of a nested loop: a loop inside another loop.
+
+**5. Two-dimensional arrays versus lists of lists**
+
+You will often see Python courses use the term two-dimensional array. Strictly speaking, the example above is a list of lists, not a specialized array object.
+
+For your current Python studies, the important distinction is:
+
+* A one-dimensional list holds a sequence of elements.
+
+* A two-dimensional list holds rows, with each row represented by another list.
+
+* A two-dimensional array describes data arranged in two dimensions, such as rows and columns.
+
+Python's regular lists can represent this structure, although specialized libraries such as NumPy provide actual multidimensional array objects.
+
+**Key takeaway**
+
+Remember this pattern:
+
+Python
+
+Run
+
+```
+matrix[row][column]
+```
+
+The first index chooses the row; the second chooses the element within that row. Combined with nested loops, this lets you access and process grid-shaped data such as tables, game boards, and matrices.
+
+
 
 
 
