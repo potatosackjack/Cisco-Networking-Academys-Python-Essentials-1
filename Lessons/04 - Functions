@@ -1,1 +1,35 @@
 ## Expectations 
+
+I assume it'll be a collection of all that I have learned so far just cramp together into functions. Em.
+
+# 4.0.0 Functions 
+
+## 4.1.1 Why do we need functions?
+
+A function is a reusable block of code designed to perform a particular task. Learning how to define, call, pass information to, and return information from functions is a major step toward building useful Python programs.
+
+## 4.1.2 Decomposition
+
+Decomposition is the process of breaking a large, complicated problem into smaller, manageable tasks that can be handled individually or by different people on a team.  
+
+When it comes to a team of developers, decomposition allows multiple people to work on different parts of the same software project without everyone having to build the entire program themselves.  
+
+Think of it like building a house. One person handles the plumbing, another handles the electrical wiring, and another handles the framing. Each person has a specific responsibility, but all their work contributes to the same finished house.  
+
+Without decomposition, a team might duplicate work, create conflicting implementations, or struggle to understand a massive codebase.
+
+With decomposition, the team can:
+- Work in parallel: Several developers can make progress at the same time.
+- Reduce complexity: Each person focuses on a smaller problem.
+- Improve maintenance: Changes can often be made to one component without rewriting the entire application.
+- Test independently: Individual components can be checked before they are integrated.
+- Clarify ownership: Developers know which parts they are responsible for.
+
+One important qualification: decomposition doesn't automatically make a project easier. If the components depend heavily on each other or the team doesn't agree on their interfaces, integration can become difficult
+
+## 4.1.3 Where do the functions come from?
+
+Functions come from two main places: Python already provides some functions, and programmers create their own functions when they need them.
+
+## 4.1.4 Your first function
+
