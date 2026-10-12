@@ -45,3 +45,53 @@ A function works by defining instructions, optionally receiving input through pa
 
 ## 4.2.1 Parameterized functions
 
+A parameterized function is a reusable block of code that receives information through parameters, allowing it to perform the same task with different inputs.
+
+Example:
+
+```
+def message(number):
+    print("Enter a number:", number)
+```
+
+## 4.2.2 Positional parameter passing
+
+A technique which assigns the ith (first, second, and so on) argument to the ith (first, second, and so on) function parameter is called positional parameter passing, while arguments passed in this way are named positional arguments.
+
+Example: 
+
+```
+def my_function(a, b, c):
+    print(a, b, c)
+
+my_function(1, 2, 3)
+```
+
+## 4.2.3 Keyword argument passing
+
+Python offers another convention for passing arguments, where the meaning of the argument is dictated by its name, not by its position ‒ it's called keyword argument passing.
+
+Example:
+
+```
+def introduction(first_name, last_name):
+    print("Hello, my name is", first_name, last_name)
+
+introduction(first_name = "James", last_name = "Bond")
+introduction(last_name = "Skywalker", first_name = "Luke")
+```
+
+# 4.3.0 Returning a result from a function
+
+## 4.3.1 Effects and results: the return instruction
+
+The Essential points:
+
+- Effects are actions a function performs, such as displaying text with print().
+- Results are values produced by a function.
+- return sends a value back to the caller.
+- return ends the current function call.
+- A function without an explicit returned value produces None by default.
+- Returned values can be stored in variables, used in calculations, or passed to other functions.
+
+Remember: print() shows you a value; return makes a value available to the rest of your program.
