@@ -4,7 +4,7 @@ I assume it'll be a collection of all that I have learned so far just cramp toge
 
 # 4.0.0 Functions 
 
-## 4.1.1 Why do we need functions?
+# 4.1.1 Why do we need functions?
 
 A function is a reusable block of code designed to perform a particular task. Learning how to define, call, pass information to, and return information from functions is a major step toward building useful Python programs.
 
@@ -31,5 +31,17 @@ One important qualification: decomposition doesn't automatically make a project 
 
 Functions come from two main places: Python already provides some functions, and programmers create their own functions when they need them.
 
-## 4.1.4 Your first function
+## 4.1.5 How functions work
+
+A function is a reusable block of code that performs a particular task. To understand how functions work, you need to understand three basic actions:
+
+1. Define the function — tell Python what the function should do.
+2. Call the function — tell Python to execute it.
+3. Return a value — optionally send a result back to the part of the program that called it.
+
+A function works by defining instructions, optionally receiving input through parameters, executing when called, and optionally returning a result. These building blocks let you create small, reusable pieces of code that work together to form larger programs.
+
+# 4.2.0 How functions communicate with their environment
+
+## 4.2.1 Parameterized functions
 
