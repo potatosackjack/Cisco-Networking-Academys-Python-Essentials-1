@@ -280,7 +280,7 @@ b = a
 a += [3]
 print(b)              # [1, 2, 3]  (b sees the change)
 
-# Immutable: rebinds to a new object
+Immutable: rebinds to a new object
 x = (1, 2)
 y = x
 x += (3,)
@@ -326,4 +326,119 @@ Why does mutability matter?
 - Use a **tuple** for fixed collections (like coordinates or records) and when you need hashability.
 - Use a **range** for memory-efficient integer sequences.
 - Use **bytearray** when you need to modify binary data in place; **bytes** otherwise.
+
+## 4.6.2 Tuples
+
+# Tuples in Python
+
+A **tuple** is an **ordered, immutable sequence** of values. Once you create it, you can't add, remove, or replace its items.
+
+```python
+point = (3, 4)
+person = ("Ana", 30, "Madrid")
+single = (5,)
+empty = ()
+```
+
+Key characteristics
+
+- **Ordered:** items keep their position and are accessed by index.
+- **Immutable:** you can't change the tuple's slots after creation.
+- **Heterogeneous allowed:** they can mix types (`("Ana", 30, True)`).
+- **Hashable** (if all items are hashable): they can be dictionary keys and set members.
+- **Allow duplicates:** `(1, 1, 2)` is valid.
+
+What you can do with them
+
+```python
+t = (10, 20, 30, 20)
+
+t[0]            # 10         indexing
+t[-1]           # 20         negative indexing
+t[1:3]          # (20, 30)   slicing
+len(t)          # 4
+20 in t         # True
+t + (40,)       # (10, 20, 30, 20, 40)   new tuple
+t * 2           # repetition
+
+t.count(20)     # 2          number of occurrences
+t.index(30)     # 2          position of first match
+
+for item in t:  # iteration
+    print(item)
+```
+
+Tuples have only two methods, `count()` and `index()`, because there is nothing to modify.
+
+What you can't do
+
+```python
+t = (1, 2, 3)
+t[0] = 99        # TypeError
+t.append(4)      # AttributeError
+del t[0]         # TypeError
+```
+
+Unpacking
+
+One of the most common uses of tuples:
+
+```python
+name, age, city = ("Ana", 30, "Madrid")
+
+first, *rest = (1, 2, 3, 4)    # first=1, rest=[2, 3, 4]
+
+a, b = 1, 2
+a, b = b, a                     # swap
+```
+
+Common uses
+
+- **Returning multiple values from a function:**
+  ```python
+  def divide(a, b):
+      return a // b, a % b
+
+  quotient, remainder = divide(17, 5)
+  ```
+- **Fixed records:** coordinates, RGB colors, database rows (`(255, 128, 0)`).
+- **Dictionary keys:** `{(0, 0): "origin", (1, 2): "A"}`
+- **Protecting data** from accidental modification.
+- **Iterating with pairs:** `for i, value in enumerate(items)` yields tuples.
+
+Tuples vs. lists
+
+| | Tuple | List |
+|---|---|---|
+| Syntax | `(1, 2, 3)` | `[1, 2, 3]` |
+| Mutable | No | Yes |
+| Hashable | Yes (if contents are) | No |
+| Methods | 2 | Many (`append`, `sort`, ...) |
+| Typical use | Fixed group of related values | Growing/changing collection |
+| Speed/memory | Slightly faster and smaller | Slightly heavier |
+
+One caveat
+
+Immutability applies to the tuple itself, not to objects it contains:
+
+```python
+t = ([1, 2], 3)
+t[0].append(99)
+print(t)         # ([1, 2, 99], 3)
+```
+
+Named tuples
+
+When positions are hard to remember, `namedtuple` (or `typing.NamedTuple`) lets you access items by name:
+
+```python
+from collections import namedtuple
+
+Point = namedtuple("Point", ["x", "y"])
+p = Point(3, 4)
+print(p.x, p.y)    # 3 4
+print(p[0])        # 3 (still works as a tuple)
+```
+
+## 4.6.3 Dictionaries
 
