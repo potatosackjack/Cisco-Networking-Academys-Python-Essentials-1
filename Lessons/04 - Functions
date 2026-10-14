@@ -149,5 +149,181 @@ You can save this summary in your Python notes:
 ## 🆘4.4.3 How the function interacts with its arguments
 
 # 4.5.0 Creating multi-parameter functions
+## 4.5.1-6 Sample functions
 
+# 4.6.0 Tuples and dictionaries
+
+## 4.6.1 Sequence types and mutability
+
+A **sequence** is an ordered collection of items where each item has a position (an index starting at 0). Sequences support indexing, slicing, iteration, `len()`, membership tests (`in`), and concatenation/repetition (with `+` and `*`).
+
+Python's main built-in sequence types are:
+
+| Type | Mutable? | Holds | Example |
+|---|---|---|---|
+| `list` | Yes | Any objects | `[1, "a", 3.5]` |
+| `tuple` | No | Any objects | `(1, "a", 3.5)` |
+| `range` | No | Integers (computed lazily) | `range(0, 10, 2)` |
+| `str` | No | Unicode characters | `"hello"` |
+| `bytes` | No | Integers 0-255 | `b"abc"` |
+| `bytearray` | Yes | Integers 0-255 | `bytearray(b"abc")` |
+
+(`array.array`, `collections.deque`, and `memoryview` are also sequence-like types from the standard library.)
+
+**Mutability**
+
+An object is **mutable** if it can be changed in place after creation, and **immutable** if it cannot.
+
+Mutable sequences: ```list``` and ```bytearray```
+
+```python
+nums = [1, 2, 3]
+nums[0] = 99          # item assignment
+nums.append(4)        # add an item
+nums.remove(2)        # remove an item
+nums.sort()           # reorder in place
+print(nums)           # [3, 4, 99]  (sorted)
+```
+
+The object's identity stays the same while its contents change:
+
+```python
+a = [1, 2, 3]
+print(id(a))
+a.append(4)
+print(id(a))          # same id: same object, modified
+```
+
+Immutable sequences: `tuple`, `str`, `range`, `bytes`
+
+```python
+t = (1, 2, 3)
+t[0] = 99             # TypeError: 'tuple' object does not support item assignment
+
+s = "hello"
+s[0] = "H"            # TypeError: 'str' object does not support item assignment
+```
+
+To "change" an immutable value, you create a new object:
+
+```python
+s = "hello"
+s = s.upper()         # a new string; the old one is unchanged
+```
+
+Shared behavior (all sequences)
+
+```python
+seq = [10, 20, 30, 40, 50]
+
+seq[1]        # 20        indexing
+seq[-1]       # 50        negative index (from the end)
+seq[1:4]      # [20, 30, 40]   slicing
+seq[::2]      # [10, 30, 50]   slicing with a step
+len(seq)      # 5
+30 in seq     # True
+seq + [60]    # concatenation (creates a new list)
+seq * 2       # repetition
+```
+
+Slicing always returns a **new** object of the same type (a copy of that portion).
+
+**Important subtleties**
+
+1. Aliasing vs. copying
+
+Assignment doesn't copy a mutable object. It just creates another name for it:
+
+```python
+a = [1, 2, 3]
+b = a                 # both names refer to the same list
+b.append(4)
+print(a)              # [1, 2, 3, 4]
+
+c = a.copy()          # or a[:] or list(a)
+c.append(5)
+print(a)              # [1, 2, 3, 4]  (unaffected)
+```
+
+2. Shallow vs. deep copy
+
+A shallow copy duplicates the outer container but not the nested objects:
+
+```python
+import copy
+
+matrix = [[1, 2], [3, 4]]
+shallow = matrix.copy()
+shallow[0].append(99)
+print(matrix)         # [[1, 2, 99], [3, 4]]  (inner list shared!)
+
+deep = copy.deepcopy(matrix)   # fully independent
+```
+
+3. Immutable containers can hold mutable objects
+
+A tuple is immutable, meaning you can't reassign its slots, but if a slot refers to a mutable object, that object can still change:
+
+```python
+t = ([1, 2], 3)
+t[0].append(99)
+print(t)              # ([1, 2, 99], 3)  (allowed!)
+t[0] = [5]            # TypeError
+```
+
+4. ```+=``` behaves differently
+
+```python
+# Mutable: extends in place
+a = [1, 2]
+b = a
+a += [3]
+print(b)              # [1, 2, 3]  (b sees the change)
+
+# Immutable: rebinds to a new object
+x = (1, 2)
+y = x
+x += (3,)
+print(y)              # (1, 2)  (y unchanged)
+print(x)              # (1, 2, 3)
+```
+
+5. Beware of ```*``` with nested mutables
+
+```python
+grid = [[0] * 3] * 3
+grid[0][0] = 1
+print(grid)           # [[1, 0, 0], [1, 0, 0], [1, 0, 0]]  (same row 3 times!)
+
+grid = [[0] * 3 for _ in range(3)]   # correct
+```
+
+Why does mutability matter?
+
+- **Hashability:** Immutable objects (like tuples of immutables) can be dictionary keys and set members. Lists cannot.
+  ```python
+  d = {(1, 2): "ok"}      # works
+  d = {[1, 2]: "bad"}     # TypeError: unhashable type: 'list'
+  ```
+- **Safety:** Immutable data can't be accidentally modified, which makes code easier to reason about (and safer to share between threads).
+- **Function arguments:** Mutable arguments can be modified by the function, which is a common source of bugs:
+  ```python
+  def add_item(item, bucket=[]):   # mutable default: shared across calls!
+      bucket.append(item)
+      return bucket
+
+  def add_item(item, bucket=None): # correct pattern
+      if bucket is None:
+          bucket = []
+      bucket.append(item)
+      return bucket
+  ```
+- **Performance:** Building a string with repeated `+=` creates many new objects; use `"".join(parts)` instead. Lists are better when you need to grow or modify data frequently.
+
+**Quick guidance**
+
+- Use a **list** for collections that change (a homogeneous, growable sequence).
+- Use a **tuple** for fixed collections (like coordinates or records) and when you need hashability.
+- Use a **range** for memory-efficient integer sequences.
+- Use **bytearray** when you need to modify binary data in place; **bytes** otherwise.
 
